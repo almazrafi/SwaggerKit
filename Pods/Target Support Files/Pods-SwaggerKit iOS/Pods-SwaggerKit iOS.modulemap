@@ -1,0 +1,6 @@
+framework module Pods_SwaggerKit_iOS {
+  umbrella header "Pods-SwaggerKit iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
