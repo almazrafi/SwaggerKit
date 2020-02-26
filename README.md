@@ -10,7 +10,7 @@
 SwaggerKit is a parser for [OpenAPI (Swagger)](https://swagger.io/specification) specs, completely written in Swift.
 
 ## Requirements
-- iOS 10.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 10.0+
+- iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
 - Xcode 10.3+
 - Swift 5.0+
 

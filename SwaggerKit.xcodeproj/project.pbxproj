@@ -10,6 +10,7 @@
 		274FC3AC51893AA3569BBC95 /* Pods_SwaggerKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF42584CE8B4BB226C49925 /* Pods_SwaggerKit_tvOS.framework */; };
 		6363C4B87BD2E4BA7931E895 /* Pods_SwaggerKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA71F92623E433D7EDC6CC6 /* Pods_SwaggerKit_iOS.framework */; };
 		ADAE21BFDD3AE724A8DD7D19 /* Pods_SwaggerKit_Tests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED1939BA02AA1D116635A55 /* Pods_SwaggerKit_Tests_macOS.framework */; };
+		B6E5F45AC26E4AE9454F93A4 /* Pods_SwaggerKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A905C63C8E84F821144923 /* Pods_SwaggerKit_watchOS.framework */; };
 		C00411A3232457A600FB5FBB /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411A2232457A600FB5FBB /* StringExtensionsSpec.swift */; };
 		C00411A4232457A600FB5FBB /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411A2232457A600FB5FBB /* StringExtensionsSpec.swift */; };
 		C00411A5232457A600FB5FBB /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411A2232457A600FB5FBB /* StringExtensionsSpec.swift */; };
@@ -31,6 +32,87 @@
 		C00411F623258B6F00FB5FBB /* SwaggerRequestBodyEncodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411F223258A6500FB5FBB /* SwaggerRequestBodyEncodingStyle.swift */; };
 		C00411F723258B7000FB5FBB /* SwaggerRequestBodyEncodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411F223258A6500FB5FBB /* SwaggerRequestBodyEncodingStyle.swift */; };
 		C00411F823258B7000FB5FBB /* SwaggerRequestBodyEncodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411F223258A6500FB5FBB /* SwaggerRequestBodyEncodingStyle.swift */; };
+		C006F1D52406B9A900C3F783 /* Swagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740B2309572200C7B12C /* Swagger.swift */; };
+		C006F1D62406B9A900C3F783 /* SwaggerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674092309572200C7B12C /* SwaggerDocument.swift */; };
+		C006F1D72406B9A900C3F783 /* SwaggerDocumentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740A2309572200C7B12C /* SwaggerDocumentContext.swift */; };
+		C006F1D82406B9A900C3F783 /* SwaggerDocumentNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674452309572200C7B12C /* SwaggerDocumentNode.swift */; };
+		C006F1D92406B9A900C3F783 /* SwaggerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674542309572200C7B12C /* SwaggerError.swift */; };
+		C006F1DA2406B9AF00C3F783 /* SwaggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BF87DB22C7C45F006DD5A6 /* SwaggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C006F1DB2406B9BA00C3F783 /* CodingPathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674522309572200C7B12C /* CodingPathWrapper.swift */; };
+		C006F1DC2406B9BA00C3F783 /* JSONDecoder+CodingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674502309572200C7B12C /* JSONDecoder+CodingPath.swift */; };
+		C006F1DD2406B9BA00C3F783 /* YAMLDecoder+CodingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674512309572200C7B12C /* YAMLDecoder+CodingPath.swift */; };
+		C006F1DE2406B9BE00C3F783 /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674532309572200C7B12C /* AnyCodable.swift */; };
+		C006F1DF2406B9BE00C3F783 /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6744E2309572200C7B12C /* AnyCodingKey.swift */; };
+		C006F1E02406B9C300C3F783 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6744D2309572200C7B12C /* Collection+Extensions.swift */; };
+		C006F1E12406B9C300C3F783 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6744C2309572200C7B12C /* Dictionary+Extensions.swift */; };
+		C006F1E22406B9C300C3F783 /* KeyedDecodingContainerProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674482309572200C7B12C /* KeyedDecodingContainerProtocol+Extensions.swift */; };
+		C006F1E32406B9C300C3F783 /* RangeReplaceableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6744A2309572200C7B12C /* RangeReplaceableCollection+Extensions.swift */; };
+		C006F1E42406B9C300C3F783 /* SingleValueDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674492309572200C7B12C /* SingleValueDecodingContainer+Extensions.swift */; };
+		C006F1E52406B9C300C3F783 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411AA232457D000FB5FBB /* String+Extensions.swift */; };
+		C006F1E62406B9C300C3F783 /* UnkeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6744B2309572200C7B12C /* UnkeyedDecodingContainer+Extensions.swift */; };
+		C006F1E72406B9C800C3F783 /* SwaggerCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DB6B623493EC500BCF093 /* SwaggerCallbacks.swift */; };
+		C006F1E82406B9C800C3F783 /* SwaggerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674172309572200C7B12C /* SwaggerComponent.swift */; };
+		C006F1E92406B9C800C3F783 /* SwaggerComponentRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742F2309572200C7B12C /* SwaggerComponentRegistry.swift */; };
+		C006F1EA2406B9C800C3F783 /* SwaggerComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674302309572200C7B12C /* SwaggerComponents.swift */; };
+		C006F1EB2406B9C800C3F783 /* SwaggerComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6743D2309572200C7B12C /* SwaggerComponentType.swift */; };
+		C006F1EC2406B9C800C3F783 /* SwaggerEmbeddedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740D2309572200C7B12C /* SwaggerEmbeddedExample.swift */; };
+		C006F1ED2406B9C800C3F783 /* SwaggerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740F2309572200C7B12C /* SwaggerExample.swift */; };
+		C006F1EE2406B9C800C3F783 /* SwaggerExampleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674122309572200C7B12C /* SwaggerExampleContent.swift */; };
+		C006F1EF2406B9C800C3F783 /* SwaggerExtensionsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411A6232457BC00FB5FBB /* SwaggerExtensionsContainer.swift */; };
+		C006F1F02406B9C800C3F783 /* SwaggerExternalDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SwaggerExternalDocumentation.swift */; };
+		C006F1F12406B9C800C3F783 /* SwaggerMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674382309572200C7B12C /* SwaggerMediaType.swift */; };
+		C006F1F22406B9C800C3F783 /* SwaggerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674102309572200C7B12C /* SwaggerOperation.swift */; };
+		C006F1F32406B9C800C3F783 /* SwaggerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674392309572200C7B12C /* SwaggerPath.swift */; };
+		C006F1F42406B9C800C3F783 /* SwaggerReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6743C2309572200C7B12C /* SwaggerReference.swift */; };
+		C006F1F52406B9C800C3F783 /* SwaggerReferenceRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742E2309572200C7B12C /* SwaggerReferenceRegistry.swift */; };
+		C006F1F62406B9C800C3F783 /* SwaggerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6743B2309572200C7B12C /* SwaggerResponse.swift */; };
+		C006F1F72406B9C800C3F783 /* SwaggerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6743E2309572200C7B12C /* SwaggerServer.swift */; };
+		C006F1F82406B9C800C3F783 /* SwaggerServerVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674142309572200C7B12C /* SwaggerServerVariable.swift */; };
+		C006F1F92406B9C800C3F783 /* SwaggerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6743A2309572200C7B12C /* SwaggerSpec.swift */; };
+		C006F1FA2406B9C800C3F783 /* SwaggerTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674442309572200C7B12C /* SwaggerTag.swift */; };
+		C006F1FB2406B9C800C3F783 /* SwaggerVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740E2309572200C7B12C /* SwaggerVersion.swift */; };
+		C006F1FC2406B9CD00C3F783 /* SwaggerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674402309572200C7B12C /* SwaggerHeader.swift */; };
+		C006F1FD2406B9CD00C3F783 /* SwaggerHeaderMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674432309572200C7B12C /* SwaggerHeaderMetadata.swift */; };
+		C006F1FE2406B9CD00C3F783 /* SwaggerHeaderSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674412309572200C7B12C /* SwaggerHeaderSerialization.swift */; };
+		C006F1FF2406B9CD00C3F783 /* SwaggerHeaderSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674422309572200C7B12C /* SwaggerHeaderSchema.swift */; };
+		C006F2002406B9D200C3F783 /* SwaggerContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6741A2309572200C7B12C /* SwaggerContactInfo.swift */; };
+		C006F2012406B9D200C3F783 /* SwaggerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674192309572200C7B12C /* SwaggerInfo.swift */; };
+		C006F2022406B9D200C3F783 /* SwaggerLicenseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6741B2309572200C7B12C /* SwaggerLicenseInfo.swift */; };
+		C006F2032406B9D700C3F783 /* SwaggerParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674372309572200C7B12C /* SwaggerParameter.swift */; };
+		C006F2042406B9D700C3F783 /* SwaggerParameterMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674362309572200C7B12C /* SwaggerParameterMetadata.swift */; };
+		C006F2052406B9D700C3F783 /* SwaggerParameterSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674352309572200C7B12C /* SwaggerParameterSchema.swift */; };
+		C006F2062406B9D700C3F783 /* SwaggerParameterSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674332309572200C7B12C /* SwaggerParameterSerialization.swift */; };
+		C006F2072406B9D700C3F783 /* SwaggerParameterStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674322309572200C7B12C /* SwaggerParameterStyle.swift */; };
+		C006F2082406B9D700C3F783 /* SwaggerParameterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674342309572200C7B12C /* SwaggerParameterType.swift */; };
+		C006F2092406B9DB00C3F783 /* SwaggerRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411BD232551E700FB5FBB /* SwaggerRequestBody.swift */; };
+		C006F20A2406B9DB00C3F783 /* SwaggerRequestBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411BF232551E700FB5FBB /* SwaggerRequestBodyEncoding.swift */; };
+		C006F20B2406B9DB00C3F783 /* SwaggerRequestBodyEncodingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411F223258A6500FB5FBB /* SwaggerRequestBodyEncodingStyle.swift */; };
+		C006F20C2406B9DB00C3F783 /* SwaggerRequestBodyMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411BE232551E700FB5FBB /* SwaggerRequestBodyMediaType.swift */; };
+		C006F20D2406B9E000C3F783 /* SwaggerAnySchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742B2309572200C7B12C /* SwaggerAnySchema.swift */; };
+		C006F20E2406B9E000C3F783 /* SwaggerArraySchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742A2309572200C7B12C /* SwaggerArraySchema.swift */; };
+		C006F20F2406B9E000C3F783 /* SwaggerBooleanSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742C2309572200C7B12C /* SwaggerBooleanSchema.swift */; };
+		C006F2102406B9E000C3F783 /* SwaggerIntegerFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674252309572200C7B12C /* SwaggerIntegerFormat.swift */; };
+		C006F2112406B9E000C3F783 /* SwaggerIntegerSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6741F2309572200C7B12C /* SwaggerIntegerSchema.swift */; };
+		C006F2122406B9E000C3F783 /* SwaggerNumberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6742D2309572200C7B12C /* SwaggerNumberFormat.swift */; };
+		C006F2132406B9E000C3F783 /* SwaggerNumberSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674212309572200C7B12C /* SwaggerNumberSchema.swift */; };
+		C006F2142406B9E000C3F783 /* SwaggerNumericSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674222309572200C7B12C /* SwaggerNumericSchema.swift */; };
+		C006F2152406B9E000C3F783 /* SwaggerObjectSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674232309572200C7B12C /* SwaggerObjectSchema.swift */; };
+		C006F2162406B9E000C3F783 /* SwaggerSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674202309572200C7B12C /* SwaggerSchema.swift */; };
+		C006F2172406B9E000C3F783 /* SwaggerSchemaDiscriminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674292309572200C7B12C /* SwaggerSchemaDiscriminator.swift */; };
+		C006F2182406B9E000C3F783 /* SwaggerSchemaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6741D2309572200C7B12C /* SwaggerSchemaMetadata.swift */; };
+		C006F2192406B9E000C3F783 /* SwaggerSchemaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674242309572200C7B12C /* SwaggerSchemaType.swift */; };
+		C006F21A2406B9E000C3F783 /* SwaggerSchemaValueBound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674262309572200C7B12C /* SwaggerSchemaValueBound.swift */; };
+		C006F21B2406B9E000C3F783 /* SwaggerSchemaXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674272309572200C7B12C /* SwaggerSchemaXML.swift */; };
+		C006F21C2406B9E000C3F783 /* SwaggerStringFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6741E2309572200C7B12C /* SwaggerStringFormat.swift */; };
+		C006F21D2406B9E000C3F783 /* SwaggerStringSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674282309572200C7B12C /* SwaggerStringSchema.swift */; };
+		C006F21E2406B9E400C3F783 /* SwaggerOAuthAuthorizationCodeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CEED0D2323E3980055FBF1 /* SwaggerOAuthAuthorizationCodeFlow.swift */; };
+		C006F21F2406B9E400C3F783 /* SwaggerOAuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CEED112323E7870055FBF1 /* SwaggerOAuthFlow.swift */; };
+		C006F2202406B9E400C3F783 /* SwaggerOAuthFlows.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CEED032323E0BE0055FBF1 /* SwaggerOAuthFlows.swift */; };
+		C006F2212406B9E400C3F783 /* SwaggerOAuthImplicitFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CEED092323E31B0055FBF1 /* SwaggerOAuthImplicitFlow.swift */; };
+		C006F2222406B9E400C3F783 /* SwaggerSecurityAPIKeyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08729E42323B3E8006563C5 /* SwaggerSecurityAPIKeyLocation.swift */; };
+		C006F2232406B9E400C3F783 /* SwaggerSecurityHTTPScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08729E82323B7EE006563C5 /* SwaggerSecurityHTTPScheme.swift */; };
+		C006F2242406B9E400C3F783 /* SwaggerSecurityScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB76BD2323AA3E00DC18B6 /* SwaggerSecurityScheme.swift */; };
+		C006F2252406B9E400C3F783 /* SwaggerSecuritySchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB76C12323AAED00DC18B6 /* SwaggerSecuritySchemeType.swift */; };
 		C03756482349EDAA00ABFAA9 /* SwaggerPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SwaggerPathSeeds.swift */; };
 		C03756492349EDAA00ABFAA9 /* SwaggerPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SwaggerPathSeeds.swift */; };
 		C037564A2349EDAA00ABFAA9 /* SwaggerPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SwaggerPathSeeds.swift */; };
@@ -580,6 +662,7 @@
 		0A5C7618C71AAAB463793387 /* Pods_SwaggerKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwaggerKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		189C8929B66494B4253DDC1E /* Pods-SwaggerKit Tests iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit Tests iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit Tests iOS/Pods-SwaggerKit Tests iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1F4974C02DC5685D03FE389C /* Pods-SwaggerKit Tests macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit Tests macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit Tests macOS/Pods-SwaggerKit Tests macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		24B583D47AC17F8E20FBDD1C /* Pods-SwaggerKit watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit watchOS/Pods-SwaggerKit watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2AF42584CE8B4BB226C49925 /* Pods_SwaggerKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwaggerKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DE42F6E4165D37080648E4 /* Pods-AurorKit macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit macOS/Pods-AurorKit macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		31BAE954F583C650498DE22A /* Pods-SwaggerKit Tests tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit Tests tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit Tests tvOS/Pods-SwaggerKit Tests tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -593,6 +676,7 @@
 		673888F294850D16CD82D675 /* Pods-AurorKit Tests tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit Tests tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit Tests tvOS/Pods-AurorKit Tests tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		6D805ABE17E7A4C045DA5C2E /* Pods-AurorKit Tests macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit Tests macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit Tests macOS/Pods-AurorKit Tests macOS.release.xcconfig"; sourceTree = "<group>"; };
 		76BC087493DBF09C5443B2A9 /* Pods-SwaggerKit macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit macOS/Pods-SwaggerKit macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		78A905C63C8E84F821144923 /* Pods_SwaggerKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwaggerKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79699C89386C10D34215837B /* Pods-SwaggerKit tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit tvOS/Pods-SwaggerKit tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		86F2C0ACD94EC7673833AE84 /* Pods-AurorKit Tests tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit Tests tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit Tests tvOS/Pods-AurorKit Tests tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		97EF56C2B2B4C50C2FFB3961 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -623,6 +707,7 @@
 		C00412062325A79600FB5FBB /* SwaggerRequestBodyMediaTypeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaggerRequestBodyMediaTypeSpec.swift; sourceTree = "<group>"; };
 		C004120A2325AB1700FB5FBB /* SwaggerRequestBodySeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaggerRequestBodySeeds.swift; sourceTree = "<group>"; };
 		C004120E2325AC8300FB5FBB /* SwaggerRequestBodySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwaggerRequestBodySpec.swift; sourceTree = "<group>"; };
+		C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwaggerKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02F12EB24059886001166D9 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		C02F12EC240598A1001166D9 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		C02F12ED240598A1001166D9 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
@@ -805,6 +890,7 @@
 		C2CD9CEA22103DF100EBB05B /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codecov.yml; sourceTree = "<group>"; };
 		C2CD9CEB22103DF100EBB05B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C2CD9CEC22103DF100EBB05B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C3DB8A823C59616B1B23BEC2 /* Pods-SwaggerKit watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit watchOS/Pods-SwaggerKit watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		D0F28F0DB17CAF7880EA245B /* Pods-SwaggerKit iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwaggerKit iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwaggerKit iOS/Pods-SwaggerKit iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D36F6A818A8A1DA9E5CE5E34 /* Pods-AurorKit macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit macOS/Pods-AurorKit macOS.release.xcconfig"; sourceTree = "<group>"; };
 		D6414EEBC854146F383353DF /* Pods-AurorKit Tests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AurorKit Tests iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AurorKit Tests iOS/Pods-AurorKit Tests iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -817,6 +903,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C006F1C92406B50900C3F783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E5F45AC26E4AE9454F93A4 /* Pods_SwaggerKit_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C080D0F121F66BD7003FBCF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -942,6 +1036,7 @@
 				C0AE177A21F677E60070DD72 /* SwaggerKit.framework */,
 				C0AE179821F6793A0070DD72 /* SwaggerKit Tests macOS.xctest */,
 				C0A6036721F680B9009EC42C /* SwaggerKit Tests tvOS.xctest */,
+				C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1293,6 +1388,7 @@
 				ECA71F92623E433D7EDC6CC6 /* Pods_SwaggerKit_iOS.framework */,
 				0A5C7618C71AAAB463793387 /* Pods_SwaggerKit_macOS.framework */,
 				2AF42584CE8B4BB226C49925 /* Pods_SwaggerKit_tvOS.framework */,
+				78A905C63C8E84F821144923 /* Pods_SwaggerKit_watchOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1326,6 +1422,8 @@
 				E6FAEE62761BBA25A29A4B11 /* Pods-SwaggerKit tvOS.release.xcconfig */,
 				C2B73112C05A5E2F71AF373C /* Pods-Example.debug.xcconfig */,
 				49C7577D9AA7DB6182E79CD2 /* Pods-Example.release.xcconfig */,
+				24B583D47AC17F8E20FBDD1C /* Pods-SwaggerKit watchOS.debug.xcconfig */,
+				C3DB8A823C59616B1B23BEC2 /* Pods-SwaggerKit watchOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1333,6 +1431,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C006F1C72406B50900C3F783 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C006F1DA2406B9AF00C3F783 /* SwaggerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C080D0EF21F66BD7003FBCF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1360,6 +1466,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C006F1CB2406B50900C3F783 /* SwaggerKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C006F1D32406B50900C3F783 /* Build configuration list for PBXNativeTarget "SwaggerKit watchOS" */;
+			buildPhases = (
+				D7A742ABCF4927D72B518138 /* [CP] Check Pods Manifest.lock */,
+				C006F1D42406B53000C3F783 /* SwiftLint */,
+				C006F1C72406B50900C3F783 /* Headers */,
+				C006F1C82406B50900C3F783 /* Sources */,
+				C006F1C92406B50900C3F783 /* Frameworks */,
+				C006F1CA2406B50900C3F783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwaggerKit watchOS";
+			productName = "SwaggerKit watchOS";
+			productReference = C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C080D0F321F66BD7003FBCF4 /* SwaggerKit tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C080D0F921F66BD7003FBCF4 /* Build configuration list for PBXNativeTarget "SwaggerKit tvOS" */;
@@ -1490,6 +1616,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Aurors;
 				TargetAttributes = {
+					C006F1CB2406B50900C3F783 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					C080D0F321F66BD7003FBCF4 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1030;
@@ -1532,6 +1661,7 @@
 				C0E9FD6D21F253A7009C453F /* SwaggerKit iOS */,
 				C0AE177921F677E60070DD72 /* SwaggerKit macOS */,
 				C080D0F321F66BD7003FBCF4 /* SwaggerKit tvOS */,
+				C006F1CB2406B50900C3F783 /* SwaggerKit watchOS */,
 				C0E9FD7521F253A8009C453F /* SwaggerKit Tests iOS */,
 				C0AE179721F6793A0070DD72 /* SwaggerKit Tests macOS */,
 				C0A6036621F680B9009EC42C /* SwaggerKit Tests tvOS */,
@@ -1540,6 +1670,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C006F1CA2406B50900C3F783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C080D0F221F66BD7003FBCF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1641,6 +1778,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwaggerKit Tests tvOS/Pods-SwaggerKit Tests tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C006F1D42406B53000C3F783 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/swiftlint.sh\n";
+		};
 		C1F4F43AA3CF698836653909 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1739,6 +1894,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D7A742ABCF4927D72B518138 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwaggerKit watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E11BE9D12CE66A5113846121 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1825,6 +2002,93 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C006F1C82406B50900C3F783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C006F2182406B9E000C3F783 /* SwaggerSchemaMetadata.swift in Sources */,
+				C006F21A2406B9E000C3F783 /* SwaggerSchemaValueBound.swift in Sources */,
+				C006F1DF2406B9BE00C3F783 /* AnyCodingKey.swift in Sources */,
+				C006F2122406B9E000C3F783 /* SwaggerNumberFormat.swift in Sources */,
+				C006F1DB2406B9BA00C3F783 /* CodingPathWrapper.swift in Sources */,
+				C006F2032406B9D700C3F783 /* SwaggerParameter.swift in Sources */,
+				C006F1D52406B9A900C3F783 /* Swagger.swift in Sources */,
+				C006F2042406B9D700C3F783 /* SwaggerParameterMetadata.swift in Sources */,
+				C006F1E22406B9C300C3F783 /* KeyedDecodingContainerProtocol+Extensions.swift in Sources */,
+				C006F20F2406B9E000C3F783 /* SwaggerBooleanSchema.swift in Sources */,
+				C006F1EF2406B9C800C3F783 /* SwaggerExtensionsContainer.swift in Sources */,
+				C006F1F32406B9C800C3F783 /* SwaggerPath.swift in Sources */,
+				C006F2162406B9E000C3F783 /* SwaggerSchema.swift in Sources */,
+				C006F1E82406B9C800C3F783 /* SwaggerComponent.swift in Sources */,
+				C006F1FA2406B9C800C3F783 /* SwaggerTag.swift in Sources */,
+				C006F1F92406B9C800C3F783 /* SwaggerSpec.swift in Sources */,
+				C006F1F62406B9C800C3F783 /* SwaggerResponse.swift in Sources */,
+				C006F1E52406B9C300C3F783 /* String+Extensions.swift in Sources */,
+				C006F1F72406B9C800C3F783 /* SwaggerServer.swift in Sources */,
+				C006F1E42406B9C300C3F783 /* SingleValueDecodingContainer+Extensions.swift in Sources */,
+				C006F2102406B9E000C3F783 /* SwaggerIntegerFormat.swift in Sources */,
+				C006F2132406B9E000C3F783 /* SwaggerNumberSchema.swift in Sources */,
+				C006F1E32406B9C300C3F783 /* RangeReplaceableCollection+Extensions.swift in Sources */,
+				C006F1F82406B9C800C3F783 /* SwaggerServerVariable.swift in Sources */,
+				C006F1FE2406B9CD00C3F783 /* SwaggerHeaderSerialization.swift in Sources */,
+				C006F2012406B9D200C3F783 /* SwaggerInfo.swift in Sources */,
+				C006F1E02406B9C300C3F783 /* Collection+Extensions.swift in Sources */,
+				C006F21B2406B9E000C3F783 /* SwaggerSchemaXML.swift in Sources */,
+				C006F1FD2406B9CD00C3F783 /* SwaggerHeaderMetadata.swift in Sources */,
+				C006F20E2406B9E000C3F783 /* SwaggerArraySchema.swift in Sources */,
+				C006F1DC2406B9BA00C3F783 /* JSONDecoder+CodingPath.swift in Sources */,
+				C006F1F12406B9C800C3F783 /* SwaggerMediaType.swift in Sources */,
+				C006F1EB2406B9C800C3F783 /* SwaggerComponentType.swift in Sources */,
+				C006F1ED2406B9C800C3F783 /* SwaggerExample.swift in Sources */,
+				C006F2052406B9D700C3F783 /* SwaggerParameterSchema.swift in Sources */,
+				C006F1F02406B9C800C3F783 /* SwaggerExternalDocumentation.swift in Sources */,
+				C006F1EE2406B9C800C3F783 /* SwaggerExampleContent.swift in Sources */,
+				C006F2022406B9D200C3F783 /* SwaggerLicenseInfo.swift in Sources */,
+				C006F1F52406B9C800C3F783 /* SwaggerReferenceRegistry.swift in Sources */,
+				C006F2092406B9DB00C3F783 /* SwaggerRequestBody.swift in Sources */,
+				C006F1D82406B9A900C3F783 /* SwaggerDocumentNode.swift in Sources */,
+				C006F1FF2406B9CD00C3F783 /* SwaggerHeaderSchema.swift in Sources */,
+				C006F1EA2406B9C800C3F783 /* SwaggerComponents.swift in Sources */,
+				C006F1F22406B9C800C3F783 /* SwaggerOperation.swift in Sources */,
+				C006F2202406B9E400C3F783 /* SwaggerOAuthFlows.swift in Sources */,
+				C006F1DD2406B9BA00C3F783 /* YAMLDecoder+CodingPath.swift in Sources */,
+				C006F1DE2406B9BE00C3F783 /* AnyCodable.swift in Sources */,
+				C006F1E92406B9C800C3F783 /* SwaggerComponentRegistry.swift in Sources */,
+				C006F1EC2406B9C800C3F783 /* SwaggerEmbeddedExample.swift in Sources */,
+				C006F2152406B9E000C3F783 /* SwaggerObjectSchema.swift in Sources */,
+				C006F1D72406B9A900C3F783 /* SwaggerDocumentContext.swift in Sources */,
+				C006F21F2406B9E400C3F783 /* SwaggerOAuthFlow.swift in Sources */,
+				C006F21C2406B9E000C3F783 /* SwaggerStringFormat.swift in Sources */,
+				C006F2212406B9E400C3F783 /* SwaggerOAuthImplicitFlow.swift in Sources */,
+				C006F1FB2406B9C800C3F783 /* SwaggerVersion.swift in Sources */,
+				C006F21D2406B9E000C3F783 /* SwaggerStringSchema.swift in Sources */,
+				C006F2002406B9D200C3F783 /* SwaggerContactInfo.swift in Sources */,
+				C006F2252406B9E400C3F783 /* SwaggerSecuritySchemeType.swift in Sources */,
+				C006F21E2406B9E400C3F783 /* SwaggerOAuthAuthorizationCodeFlow.swift in Sources */,
+				C006F1D62406B9A900C3F783 /* SwaggerDocument.swift in Sources */,
+				C006F2242406B9E400C3F783 /* SwaggerSecurityScheme.swift in Sources */,
+				C006F2232406B9E400C3F783 /* SwaggerSecurityHTTPScheme.swift in Sources */,
+				C006F2142406B9E000C3F783 /* SwaggerNumericSchema.swift in Sources */,
+				C006F20C2406B9DB00C3F783 /* SwaggerRequestBodyMediaType.swift in Sources */,
+				C006F2172406B9E000C3F783 /* SwaggerSchemaDiscriminator.swift in Sources */,
+				C006F20B2406B9DB00C3F783 /* SwaggerRequestBodyEncodingStyle.swift in Sources */,
+				C006F2112406B9E000C3F783 /* SwaggerIntegerSchema.swift in Sources */,
+				C006F2062406B9D700C3F783 /* SwaggerParameterSerialization.swift in Sources */,
+				C006F2222406B9E400C3F783 /* SwaggerSecurityAPIKeyLocation.swift in Sources */,
+				C006F2192406B9E000C3F783 /* SwaggerSchemaType.swift in Sources */,
+				C006F1E62406B9C300C3F783 /* UnkeyedDecodingContainer+Extensions.swift in Sources */,
+				C006F1F42406B9C800C3F783 /* SwaggerReference.swift in Sources */,
+				C006F1E72406B9C800C3F783 /* SwaggerCallbacks.swift in Sources */,
+				C006F1D92406B9A900C3F783 /* SwaggerError.swift in Sources */,
+				C006F20D2406B9E000C3F783 /* SwaggerAnySchema.swift in Sources */,
+				C006F1FC2406B9CD00C3F783 /* SwaggerHeader.swift in Sources */,
+				C006F2082406B9D700C3F783 /* SwaggerParameterType.swift in Sources */,
+				C006F2072406B9D700C3F783 /* SwaggerParameterStyle.swift in Sources */,
+				C006F1E12406B9C300C3F783 /* Dictionary+Extensions.swift in Sources */,
+				C006F20A2406B9DB00C3F783 /* SwaggerRequestBodyEncoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C080D0F021F66BD7003FBCF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2419,6 +2683,68 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C006F1D12406B50900C3F783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B583D47AC17F8E20FBDD1C /* Pods-SwaggerKit watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C006F1D22406B50900C3F783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DB8A823C59616B1B23BEC2 /* Pods-SwaggerKit watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		C080D0FA21F66BD7003FBCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79699C89386C10D34215837B /* Pods-SwaggerKit tvOS.debug.xcconfig */;
@@ -2441,7 +2767,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -2478,7 +2804,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -2505,7 +2831,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2529,7 +2855,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
@@ -2682,7 +3008,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -2720,7 +3046,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -2750,7 +3076,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -2778,7 +3104,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -2811,7 +3137,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -2848,7 +3174,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Aurors.SwaggerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
 				PRODUCT_NAME = SwaggerKit;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -2876,7 +3202,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -2900,7 +3226,7 @@
 					"@loader_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Aurors.SwaggerKit.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.SwaggerKit.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 5.0;
@@ -2913,6 +3239,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C006F1D32406B50900C3F783 /* Build configuration list for PBXNativeTarget "SwaggerKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C006F1D12406B50900C3F783 /* Debug */,
+				C006F1D22406B50900C3F783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C080D0F921F66BD7003FBCF4 /* Build configuration list for PBXNativeTarget "SwaggerKit tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

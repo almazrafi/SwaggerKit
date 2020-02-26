@@ -30,6 +30,12 @@ target 'SwaggerKit tvOS' do
     common_pods
 end
 
+target 'SwaggerKit watchOS' do
+    platform :watchos, '3.0'
+
+    common_pods
+end
+
 target 'SwaggerKit Tests iOS' do
     inherit! :search_paths
     platform :ios, '10.0'
