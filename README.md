@@ -5,7 +5,7 @@
 [![Platforms](https://img.shields.io/cocoapods/p/SwaggerKit.svg?style=flat)](https://developer.apple.com/discover/)
 [![Xcode](https://img.shields.io/badge/Xcode-10.3-blue.svg)](https://developer.apple.com/xcode)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
-[![License](https://img.shields.io/github/license/almazrafi/SwaggerKit.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/almazrafi/SwaggerKit.svg)](https://opensource.org/licenses/MIT)
 
 SwaggerKit is a parser for [OpenAPI (Swagger)](https://swagger.io/specification) specs, completely written in Swift.
 
