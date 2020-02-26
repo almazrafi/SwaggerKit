@@ -1,0 +1,6 @@
+framework module Pods_SwaggerKit_watchOS {
+  umbrella header "Pods-SwaggerKit watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
