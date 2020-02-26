@@ -42,8 +42,6 @@ jobs:
         run: |
           gem install bundler
           bundle install --without=documentation
-      - name: CocoaPods
-        run: bundle exec pod install
       - name: Preparation
         run: |
           set -o pipefail
