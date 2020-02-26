@@ -19,7 +19,7 @@ jobs:
     runs-on: macOS-latest
     env:
       DEVELOPER_DIR: /Applications/Xcode_11.3.1.app/Contents/Developer
-      XCODE_PROJECT: SwaggerKit.xcodeproj
+      XCODE_WORKSPACE: SwaggerKit.xcworkspace
       IOS_SCHEME: SwaggerKit iOS
       IOS_DESTINATION: OS=13.3,name=iPhone 11 Pro
       IOS_BUILD_LOG_PATH: xcodebuild-ios.json
@@ -50,15 +50,15 @@ jobs:
           swift --version
       - name: Tests - iOS
         run: |
-          xcodebuild clean build test -project "$XCODE_PROJECT" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$IOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
+          xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$IOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
           bash <(curl -s https://codecov.io/bash) -cF ios -J 'SwaggerKit'
       - name: Tests - macOS
         run: |
-          xcodebuild clean build test -project "$XCODE_PROJECT" -scheme "$MACOS_SCHEME" -destination "$MACOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$MACOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
+          xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$MACOS_SCHEME" -destination "$MACOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$MACOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
           bash <(curl -s https://codecov.io/bash) -cF osx -J 'SwaggerKit'
       - name: Tests - tvOS
         run: |
-          xcodebuild clean build test -project "$XCODE_PROJECT" -scheme "$TVOS_SCHEME" -destination "$TVOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$TVOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
+          xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$TVOS_SCHEME" -destination "$TVOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$TVOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
           bash <(curl -s https://codecov.io/bash) -cF tvos -J 'SwaggerKit'
       - name: Danger
         run: bundle exec danger --remove-previous-comments
