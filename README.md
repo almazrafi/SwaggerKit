@@ -29,7 +29,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'SwaggerKit', '~> 1.0.0-alpha.2'
+    pod 'SwaggerKit', '~> 1.0.0-alpha.3'
 end
 ```
 
@@ -61,7 +61,7 @@ The [Swift Package Manager](https://swift.org/package-manager/) is a tool for ma
 
 To integrate SwaggerKit into your Xcode project using Swift Package Manager, add the following as a dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/almazrafi/SwaggerKit.git", from: "1.0.0-alpha.2")
+.package(url: "https://github.com/almazrafi/SwaggerKit.git", from: "1.0.0-alpha.3")
 ```
 and then specify `"SwaggerKit"` as a dependency of the Target in which you wish to use SwaggerKit.
 
@@ -76,7 +76,7 @@ let package = Package(
         .library(name: "MyPackage", targets: ["MyPackage"])
     ],
     dependencies: [
-        .package(url: "https://github.com/almazrafi/SwaggerKit.git", from: "1.0.0-alpha.2")
+        .package(url: "https://github.com/almazrafi/SwaggerKit.git", from: "1.0.0-alpha.3")
     ],
     targets: [
         .target(name: "MyPackage", dependencies: ["SwaggerKit"])
