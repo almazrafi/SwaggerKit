@@ -2,6 +2,10 @@ included:
   - Sources
   - Tests
 
+excluded:
+  - Tests/XCTestManifests.swift
+  - Tests/LinuxMain.swift
+
 whitelist_rules:
   - anyobject_protocol
   - array_init
