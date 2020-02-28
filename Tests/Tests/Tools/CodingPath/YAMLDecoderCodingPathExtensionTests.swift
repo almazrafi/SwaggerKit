@@ -5,7 +5,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class YAMLDecoderCodingPathExtensionTests: QuickSpec {
+final class YAMLDecoderCodingPathExtensionTests: QuickSpec {
 
     // MARK: - Instance Methods
 

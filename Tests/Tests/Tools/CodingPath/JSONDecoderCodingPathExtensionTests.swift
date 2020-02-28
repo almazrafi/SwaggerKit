@@ -4,7 +4,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class JSONDecoderCodingPathExtensionTests: QuickSpec {
+final class JSONDecoderCodingPathExtensionTests: QuickSpec {
 
     // MARK: - Instance Methods
 

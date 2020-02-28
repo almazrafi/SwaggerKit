@@ -5,7 +5,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class SpecPathTests: QuickSpec {
+final class SpecPathTests: QuickSpec {
 
     // MARK: - Instance Methods
 

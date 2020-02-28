@@ -5,7 +5,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class SpecOAuthImplicitFlowTests: QuickSpec {
+final class SpecOAuthImplicitFlowTests: QuickSpec {
 
     // MARK: - Instance Methods
 

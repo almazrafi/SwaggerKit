@@ -1,7 +1,7 @@
 import Foundation
 
 /// An object representing a reference to another component.
-public class SpecReference<T: Codable>: Codable {
+public final class SpecReference<T: Codable>: Codable {
 
     // MARK: - Instance Properties
 

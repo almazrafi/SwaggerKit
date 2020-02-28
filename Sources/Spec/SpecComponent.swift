@@ -1,7 +1,7 @@
 import Foundation
 
 /// An object representing a component.
-public class SpecComponent<T: Codable>: Codable {
+public final class SpecComponent<T: Codable>: Codable {
 
     // MARK: - Nested Types
 

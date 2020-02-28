@@ -1,6 +1,6 @@
 import Foundation
 
-public class SpecContainer {
+public final class SpecContainer {
 
     // MARK: - Instance Properties
 
