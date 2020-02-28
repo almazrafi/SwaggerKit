@@ -20,12 +20,12 @@ jobs:
     env:
       DEVELOPER_DIR: /Applications/Xcode_11.3.1.app/Contents/Developer
       XCODE_WORKSPACE: SwaggerKit.xcworkspace
-      IOS_SCHEME: SwaggerKit iOS
-      IOS_DESTINATION: OS=13.3,name=iPhone 11 Pro
-      IOS_BUILD_LOG_PATH: xcodebuild-ios.json
       MACOS_SCHEME: SwaggerKit macOS
       MACOS_DESTINATION: platform=macOS
       MACOS_BUILD_LOG_PATH: xcodebuild-macos.json
+      IOS_SCHEME: SwaggerKit iOS
+      IOS_DESTINATION: OS=13.3,name=iPhone 11 Pro
+      IOS_BUILD_LOG_PATH: xcodebuild-ios.json
       TVOS_SCHEME: SwaggerKit tvOS
       TVOS_DESTINATION: OS=13.3,name=Apple TV 4K
       TVOS_BUILD_LOG_PATH: xcodebuild-tvos.json
@@ -49,14 +49,14 @@ jobs:
         run: |
           set -o pipefail
           swift --version
-      - name: Test iOS
-        run: |
-          xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$IOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
-          bash <(curl -s https://codecov.io/bash) -cF ios -J 'SwaggerKit'
       - name: Test macOS
         run: |
           xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$MACOS_SCHEME" -destination "$MACOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$MACOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
           bash <(curl -s https://codecov.io/bash) -cF osx -J 'SwaggerKit'
+      - name: Test iOS
+        run: |
+          xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$IOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
+          bash <(curl -s https://codecov.io/bash) -cF ios -J 'SwaggerKit'
       - name: Test tvOS
         run: |
           xcodebuild clean build test -workspace "$XCODE_WORKSPACE" -scheme "$TVOS_SCHEME" -destination "$TVOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$TVOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
