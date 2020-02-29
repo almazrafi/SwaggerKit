@@ -5,7 +5,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class SpecMediaTypeTests: QuickSpec {
+final class SpecMediaTypeTests: QuickSpec {
 
     // MARK: - Instance Methods
 

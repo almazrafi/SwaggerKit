@@ -5,7 +5,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class SpecComponentsTests: QuickSpec {
+final class SpecComponentsTests: QuickSpec {
 
     // MARK: - Instance Methods
 
@@ -65,9 +65,6 @@ class SpecComponentsTests: QuickSpec {
             it("should be correctly encoded to YAML string") {
                 do {
                     let encodedComponentsYAML = try YAMLEncoder.test.encode(components)
-
-                    print(try componentsYAML.yamlSorted())
-                    print(encodedComponentsYAML)
 
                     expect(encodedComponentsYAML).to(equal(try componentsYAML.yamlSorted()))
                 } catch {

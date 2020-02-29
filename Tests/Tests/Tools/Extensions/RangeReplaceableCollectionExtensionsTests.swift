@@ -4,7 +4,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class RangeReplaceableCollectionExtensionsTests: QuickSpec {
+final class RangeReplaceableCollectionExtensionsTests: QuickSpec {
 
     // MARK: - Instance Methods
 

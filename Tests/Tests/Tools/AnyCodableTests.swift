@@ -4,7 +4,7 @@ import Nimble
 
 @testable import SwaggerKit
 
-class AnyCodableTests: QuickSpec {
+final class AnyCodableTests: QuickSpec {
 
     // MARK: - Instance Methods
 

@@ -1,6 +1,6 @@
 import Foundation
 
-public class SpecDocument {
+public final class SpecDocument {
 
     // MARK: - Nested Types
 
@@ -25,7 +25,9 @@ public class SpecDocument {
     // MARK: - Instance Methods
 
     internal func resolveReferences(with context: SpecDocumentContext) throws {
-        try referenceResolvers.forEach { referenceResolver in
+        while !referenceResolvers.isEmpty {
+            let referenceResolver = referenceResolvers.removeFirst()
+
             try referenceResolver(context)
         }
     }
