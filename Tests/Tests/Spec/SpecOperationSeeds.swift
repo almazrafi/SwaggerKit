@@ -52,7 +52,7 @@ enum SpecOperationSeeds {
         operationId: postApp
         summary: Creates app with the provided information
         externalDocs:
-        \(SpecExternalDocumentationSeeds.moreInfoYAML.yamlIndented(level: 1))
+        \(SpecExternalDocsSeeds.moreInfoYAML.yamlIndented(level: 1))
         responses:
           200:
         \(SpecResponseSeeds.appInfoYAML.yamlIndented(level: 2))
@@ -69,7 +69,7 @@ enum SpecOperationSeeds {
     static let postApp = SpecOperation(
         identifier: "postApp",
         summary: "Creates app with the provided information",
-        externalDocumentation: SpecExternalDocumentationSeeds.moreInfo,
+        externalDocs: SpecExternalDocsSeeds.moreInfo,
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")

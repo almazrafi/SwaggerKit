@@ -49,6 +49,10 @@ enum SpecComponentsSeeds {
         """
 
     static let appStore = SpecComponents(
+        examples: [
+            "UID": SpecComponent(value: SpecExampleSeeds.uid),
+            "Email": SpecComponent(value: SpecExampleSeeds.email)
+        ],
         securitySchemes: [
             "OAuth2": SpecComponent(value: SpecSecuritySchemeSeeds.oauth2),
             "Basic": SpecComponent(value: SpecSecuritySchemeSeeds.basic)
@@ -71,10 +75,6 @@ enum SpecComponentsSeeds {
             "AppInfo": SpecComponent(value: SpecResponseSeeds.appInfo)
         ],
         callbacks: ["Subscription": SpecComponent(value: SpecCallbacksSeeds.subscription)],
-        examples: [
-            "UID": SpecComponent(value: SpecExampleSeeds.uid),
-            "Email": SpecComponent(value: SpecExampleSeeds.email)
-        ],
         extensions: ["private": true]
     )
 }

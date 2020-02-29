@@ -11,7 +11,7 @@ public struct SpecSchemaMetadata: Codable, Equatable, Changeable {
         case description
 
         case xml
-        case externalDocumentation = "externalDocs"
+        case externalDocs
 
         case isReadOnly = "readOnly"
         case isWriteOnly = "writeOnly"
@@ -40,7 +40,7 @@ public struct SpecSchemaMetadata: Codable, Equatable, Changeable {
     public var xml: SpecSchemaXML?
 
     /// Additional external documentation for this schema.
-    public var externalDocumentation: SpecExternalDocumentation?
+    public var externalDocs: SpecExternalDocs?
 
     /// Relevant only for Schema "`properties`" definitions. Declares the property as "read only".
     /// This means that it may be sent as part of a response but should not be sent as part of the request.
@@ -76,7 +76,7 @@ public struct SpecSchemaMetadata: Codable, Equatable, Changeable {
         title: String? = nil,
         description: String? = nil,
         xml: SpecSchemaXML? = nil,
-        externalDocumentation: SpecExternalDocumentation? = nil,
+        externalDocs: SpecExternalDocs? = nil,
         isReadOnly: Bool? = nil,
         isWriteOnly: Bool? = nil,
         isDeprecated: Bool? = nil,
@@ -87,7 +87,7 @@ public struct SpecSchemaMetadata: Codable, Equatable, Changeable {
         self.description = description
 
         self.xml = xml
-        self.externalDocumentation = externalDocumentation
+        self.externalDocs = externalDocs
 
         self.isReadOnly = isReadOnly
         self.isWriteOnly = isWriteOnly

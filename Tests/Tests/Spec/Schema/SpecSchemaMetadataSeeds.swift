@@ -50,13 +50,13 @@ enum SpecSchemaMetadataSeeds {
     static let ratingYAML = """
         title: Rating
         externalDocs:
-        \(SpecExternalDocumentationSeeds.moreInfoYAML.yamlIndented(level: 1))
+        \(SpecExternalDocsSeeds.moreInfoYAML.yamlIndented(level: 1))
         readOnly: true
         """
 
     static let rating = SpecSchemaMetadata(
         title: "Rating",
-        externalDocumentation: SpecExternalDocumentationSeeds.moreInfo,
+        externalDocs: SpecExternalDocsSeeds.moreInfo,
         isReadOnly: true
     )
 

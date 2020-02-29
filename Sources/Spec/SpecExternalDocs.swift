@@ -3,7 +3,7 @@ import Foundation
 /// An object representing an external documentation.
 /// Allows referencing an external resource for extended documentation.
 /// Get more info: https://swagger.io/specification/#externalDocumentationObject
-public struct SpecExternalDocumentation: Codable, Equatable, Changeable {
+public struct SpecExternalDocs: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
