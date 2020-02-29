@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing an example.
 /// Get more info: https://swagger.io/specification/#exampleObject
-public struct SpecExample: Codable, Equatable {
+public struct SpecExample: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

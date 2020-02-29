@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a Boolean schema type.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecBooleanSchema: Codable, Equatable {
+public struct SpecBooleanSchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

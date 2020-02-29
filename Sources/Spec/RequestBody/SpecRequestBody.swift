@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a request body.
 /// Get more info: https://swagger.io/specification/#requestBodyObject
-public struct SpecRequestBody: Codable, Equatable {
+public struct SpecRequestBody: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

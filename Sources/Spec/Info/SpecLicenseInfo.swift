@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing license information for the exposed API.
 /// Get more info: https://swagger.io/specification/#licenseObject
-public struct SpecLicenseInfo: Codable, Equatable {
+public struct SpecLicenseInfo: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

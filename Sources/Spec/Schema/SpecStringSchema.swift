@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a string schema type.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecStringSchema: Codable, Equatable {
+public struct SpecStringSchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

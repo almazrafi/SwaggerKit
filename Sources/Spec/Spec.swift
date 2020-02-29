@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Spec: Codable, Equatable {
+public struct Spec: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
@@ -10,10 +10,10 @@ public struct Spec: Codable, Equatable {
         case externalDocumentation = "externalDocs"
 
         case tags
-        case components
         case servers
         case security
         case paths
+        case components
     }
 
     // MARK: - Type Properties
@@ -29,10 +29,10 @@ public struct Spec: Codable, Equatable {
     public var externalDocumentation: SpecExternalDocumentation?
 
     public var tags: [SpecTag]?
-    public var components: SpecComponents?
     public var servers: [SpecServer]?
     public var security: [String: [String]]?
     public var paths: [String: SpecComponent<SpecPath>]
+    public var components: SpecComponents?
 
     /// The extensions properties.
     /// Keys will be prefixed by "x-" when encoding.
@@ -49,10 +49,10 @@ public struct Spec: Codable, Equatable {
         info: SpecInfo,
         externalDocumentation: SpecExternalDocumentation? = nil,
         tags: [SpecTag]? = nil,
-        components: SpecComponents? = nil,
         servers: [SpecServer]? = nil,
         security: [String: [String]]? = nil,
         paths: [String: SpecComponent<SpecPath>],
+        components: SpecComponents? = nil,
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)
@@ -62,10 +62,10 @@ public struct Spec: Codable, Equatable {
         self.externalDocumentation = externalDocumentation
 
         self.tags = tags
-        self.components = components
         self.servers = servers
         self.security = security
         self.paths = paths
+        self.components = components
     }
 
     public init(from decoder: Decoder) throws {
@@ -85,7 +85,6 @@ public struct Spec: Codable, Equatable {
         externalDocumentation = try container.decodeIfPresent(forKey: .externalDocumentation)
 
         tags = try container.decodeIfPresent(forKey: .tags)
-        components = try container.decodeIfPresent(forKey: .components)
         servers = try container.decodeIfPresent(forKey: .servers)
 
         security = try container
@@ -95,6 +94,7 @@ public struct Spec: Codable, Equatable {
             }
 
         paths = try container.decode(forKey: .paths)
+        components = try container.decodeIfPresent(forKey: .components)
 
         extensionsContainer = try SpecExtensionsContainer(from: decoder)
     }
@@ -118,7 +118,6 @@ public struct Spec: Codable, Equatable {
         try container.encodeIfPresent(externalDocumentation, forKey: .externalDocumentation)
 
         try container.encodeIfPresent(tags, forKey: .tags)
-        try container.encodeIfPresent(components, forKey: .components)
         try container.encodeIfPresent(servers, forKey: .servers)
 
         try container.encodeIfPresent(
@@ -127,6 +126,7 @@ public struct Spec: Codable, Equatable {
         )
 
         try container.encode(paths, forKey: .paths)
+        try container.encodeIfPresent(components, forKey: .components)
 
         try extensionsContainer.encode(to: encoder)
     }

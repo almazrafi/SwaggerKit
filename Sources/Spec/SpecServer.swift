@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a server.
 /// Get more info: https://swagger.io/specification/#serverObject
-public struct SpecServer: Codable, Equatable {
+public struct SpecServer: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

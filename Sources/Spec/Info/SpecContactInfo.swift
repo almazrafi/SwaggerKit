@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing contact information for the exposed API.
 /// Get more info: https://swagger.io/specification/#contactObject
-public struct SpecContactInfo: Codable, Equatable {
+public struct SpecContactInfo: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

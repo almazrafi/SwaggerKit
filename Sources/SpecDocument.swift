@@ -13,7 +13,7 @@ public final class SpecDocument {
     public let url: URL?
     public let codingPath: [String]
 
-    public private(set) var components: [String: Any] = [:]
+    public private(set) var components: [String: AnyObject] = [:]
 
     // MARK: - Initializers
 

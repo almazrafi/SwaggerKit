@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a callbacks object.
 /// Get more info: https://swagger.io/specification/#callbackObject
-public struct SpecCallbacks: Codable, Equatable {
+public struct SpecCallbacks: Codable, Equatable, Changeable {
 
     // MARK: - Instance Properties
 

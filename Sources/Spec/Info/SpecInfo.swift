@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing metadata about the API.
 /// Get more info: https://swagger.io/specification/#infoObject
-public struct SpecInfo: Codable, Equatable {
+public struct SpecInfo: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

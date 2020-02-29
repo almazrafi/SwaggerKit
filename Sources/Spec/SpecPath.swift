@@ -5,7 +5,7 @@ import Foundation
 /// The path itself is still exposed to the documentation viewer
 /// but they will not know which operations and parameters are available.
 /// Get more info: https://swagger.io/specification/#pathItemObject
-public struct SpecPath: Codable, Equatable {
+public struct SpecPath: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

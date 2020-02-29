@@ -5,7 +5,7 @@ import Foundation
 /// - `type` must not be specified, it is implicitly header.
 /// - all traits that are affected by the `type` must be applicable to the header type (for example, `style`).
 /// Get more info: https://swagger.io/specification/#headerObject
-public struct SpecHeader: Codable, Equatable {
+public struct SpecHeader: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

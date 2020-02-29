@@ -5,7 +5,7 @@ public final class SpecReference<T: Codable>: Codable {
 
     // MARK: - Instance Properties
 
-    internal private(set) weak var component: SpecComponent<T>?
+    public private(set) weak var component: SpecComponent<T>?
 
     /// URI of the referenced component according to the [RFC 3986](https://tools.ietf.org/html/rfc3986).
     public let uri: String

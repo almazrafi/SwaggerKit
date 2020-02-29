@@ -4,7 +4,7 @@ import Foundation
 /// When using arrays, XML element names are not inferred (for singular/plural forms)
 /// and the `name` property should be used to add that information.
 /// Get more info: https://swagger.io/specification/#xmlObject
-public struct SpecSchemaXML: Codable, Equatable {
+public struct SpecSchemaXML: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

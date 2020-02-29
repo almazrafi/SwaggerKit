@@ -4,7 +4,7 @@ import Foundation
 /// All objects defined within the components object will have no effect on the API
 /// unless they are explicitly referenced from properties outside the components object.
 /// Get more info: https://swagger.io/specification/#componentsObject
-public struct SpecComponents: Codable, Equatable {
+public struct SpecComponents: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
@@ -113,6 +113,58 @@ public struct SpecComponents: Codable, Equatable {
     }
 
     // MARK: - Instance Methods
+
+    private func referenceURI(typeKey: CodingKeys, key: String) -> String {
+        return "#/components/\(typeKey.rawValue)/\(key)"
+    }
+
+    public func referenceURI(for securityScheme: SpecSecurityScheme) -> String? {
+        return securitySchemes?
+            .first { $1.value == securityScheme }
+            .map { referenceURI(typeKey: CodingKeys.securitySchemes, key: $0.key) }
+    }
+
+    public func referenceURI(for schema: SpecSchema) -> String? {
+        return schemas?
+            .first { $1.value == schema }
+            .map { referenceURI(typeKey: CodingKeys.schemas, key: $0.key) }
+    }
+
+    public func referenceURI(for header: SpecHeader) -> String? {
+        return headers?
+            .first { $1.value == header }
+            .map { referenceURI(typeKey: CodingKeys.headers, key: $0.key) }
+    }
+
+    public func referenceURI(for parameter: SpecParameter) -> String? {
+        return parameters?
+            .first { $1.value == parameter }
+            .map { referenceURI(typeKey: CodingKeys.parameters, key: $0.key) }
+    }
+
+    public func referenceURI(for requestBody: SpecRequestBody) -> String? {
+        return requestBodies?
+            .first { $1.value == requestBody }
+            .map { referenceURI(typeKey: CodingKeys.requestBodies, key: $0.key) }
+    }
+
+    public func referenceURI(for response: SpecResponse) -> String? {
+        return responses?
+            .first { $1.value == response }
+            .map { referenceURI(typeKey: CodingKeys.responses, key: $0.key) }
+    }
+
+    public func referenceURI(for callback: SpecCallbacks) -> String? {
+        return callbacks?
+            .first { $1.value == callback }
+            .map { referenceURI(typeKey: CodingKeys.callbacks, key: $0.key) }
+    }
+
+    public func referenceURI(for example: SpecExample) -> String? {
+        return examples?
+            .first { $1.value == example }
+            .map { referenceURI(typeKey: CodingKeys.examples, key: $0.key) }
+    }
 
     /// Encodes this instance into the given encoder.
     ///

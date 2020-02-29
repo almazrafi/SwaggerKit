@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a schema that describes the structure and syntax of the header.
 /// Get more info: https://swagger.io/specification/#headerObject
-public struct SpecHeaderSchema: Codable, Equatable {
+public struct SpecHeaderSchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

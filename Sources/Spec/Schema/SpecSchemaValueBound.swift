@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a bound of the possible values.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecSchemaValueBound<T: Comparable>: Equatable {
+public struct SpecSchemaValueBound<T: Comparable>: Equatable, Changeable {
 
     // MARK: - Instance Properties
 

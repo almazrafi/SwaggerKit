@@ -3,7 +3,7 @@ import Foundation
 /// Adds metadata to a single tag that is used by the SpecOperation.
 /// It is not mandatory to have a SpecTag per tag defined in the SpecOperation instances.
 /// Get more info: https://swagger.io/specification/#tagObject
-public struct SpecTag: Codable, Equatable {
+public struct SpecTag: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
