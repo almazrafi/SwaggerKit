@@ -7,7 +7,7 @@ public struct Spec: Codable, Equatable, Changeable {
     private enum CodingKeys: String, CodingKey {
         case version = "openapi"
         case info
-        case externalDocumentation = "externalDocs"
+        case externalDocs
 
         case tags
         case servers
@@ -26,7 +26,7 @@ public struct Spec: Codable, Equatable, Changeable {
 
     public var version: SpecVersion
     public var info: SpecInfo
-    public var externalDocumentation: SpecExternalDocumentation?
+    public var externalDocs: SpecExternalDocs?
 
     public var tags: [SpecTag]?
     public var servers: [SpecServer]?
@@ -47,7 +47,7 @@ public struct Spec: Codable, Equatable, Changeable {
     public init(
         version: SpecVersion,
         info: SpecInfo,
-        externalDocumentation: SpecExternalDocumentation? = nil,
+        externalDocs: SpecExternalDocs? = nil,
         tags: [SpecTag]? = nil,
         servers: [SpecServer]? = nil,
         security: [String: [String]]? = nil,
@@ -59,7 +59,7 @@ public struct Spec: Codable, Equatable, Changeable {
 
         self.version = version
         self.info = info
-        self.externalDocumentation = externalDocumentation
+        self.externalDocs = externalDocs
 
         self.tags = tags
         self.servers = servers
@@ -82,7 +82,7 @@ public struct Spec: Codable, Equatable, Changeable {
         }
 
         info = try container.decode(forKey: .info)
-        externalDocumentation = try container.decodeIfPresent(forKey: .externalDocumentation)
+        externalDocs = try container.decodeIfPresent(forKey: .externalDocs)
 
         tags = try container.decodeIfPresent(forKey: .tags)
         servers = try container.decodeIfPresent(forKey: .servers)
@@ -115,7 +115,7 @@ public struct Spec: Codable, Equatable, Changeable {
 
         try container.encode(version, forKey: .version)
         try container.encode(info, forKey: .info)
-        try container.encodeIfPresent(externalDocumentation, forKey: .externalDocumentation)
+        try container.encodeIfPresent(externalDocs, forKey: .externalDocs)
 
         try container.encodeIfPresent(tags, forKey: .tags)
         try container.encodeIfPresent(servers, forKey: .servers)

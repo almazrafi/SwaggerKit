@@ -10,7 +10,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         case identifier = "operationId"
         case summary
         case description
-        case externalDocumentation = "externalDocs"
+        case externalDocs
         case isDeprecated = "deprecated"
 
         case responses
@@ -39,7 +39,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
     public var description: String?
 
     /// Additional external documentation for this schema.
-    public var externalDocumentation: SpecExternalDocumentation?
+    public var externalDocs: SpecExternalDocs?
 
     /// Specifies that the operation is deprecated and should be transitioned out of usage.
     /// Default value is `false`.
@@ -96,7 +96,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         identifier: String? = nil,
         summary: String? = nil,
         description: String? = nil,
-        externalDocumentation: SpecExternalDocumentation? = nil,
+        externalDocs: SpecExternalDocs? = nil,
         isDeprecated: Bool? = nil,
         responses: [String: SpecComponent<SpecResponse>],
         parameters: [SpecComponent<SpecParameter>]? = nil,
@@ -112,7 +112,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         self.identifier = identifier
         self.summary = summary
         self.description = description
-        self.externalDocumentation = externalDocumentation
+        self.externalDocs = externalDocs
         self.isDeprecated = isDeprecated
 
         self.responses = responses
@@ -136,7 +136,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         identifier = try container.decodeIfPresent(forKey: .identifier)
         summary = try container.decodeIfPresent(forKey: .summary)
         description = try container.decodeIfPresent(forKey: .description)
-        externalDocumentation = try container.decodeIfPresent(forKey: .externalDocumentation)
+        externalDocs = try container.decodeIfPresent(forKey: .externalDocs)
         isDeprecated = try container.decodeIfPresent(forKey: .isDeprecated)
 
         responses = try container.decode(forKey: .responses)
@@ -169,7 +169,7 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         try container.encodeIfPresent(identifier, forKey: .identifier)
         try container.encodeIfPresent(summary, forKey: .summary)
         try container.encodeIfPresent(description, forKey: .description)
-        try container.encodeIfPresent(externalDocumentation, forKey: .externalDocumentation)
+        try container.encodeIfPresent(externalDocs, forKey: .externalDocs)
         try container.encodeIfPresent(isDeprecated, forKey: .isDeprecated)
 
         try container.encode(responses, forKey: .responses)

@@ -12,14 +12,14 @@ enum SpecTagSeeds {
         name: Private
         description: Private methods. Can only be used by internal clients.
         externalDocs:
-        \(SpecExternalDocumentationSeeds.moreInfoYAML.yamlIndented(level: 1))
+        \(SpecExternalDocsSeeds.moreInfoYAML.yamlIndented(level: 1))
         x-private: true
         """
 
     static let `private` = SpecTag(
         name: "Private",
         description: "Private methods. Can only be used by internal clients.",
-        externalDocumentation: SpecExternalDocumentationSeeds.moreInfo,
+        externalDocs: SpecExternalDocsSeeds.moreInfo,
         extensions: ["private": true]
     )
 }

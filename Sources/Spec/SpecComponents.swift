@@ -9,6 +9,7 @@ public struct SpecComponents: Codable, Equatable, Changeable {
     // MARK: - Nested Types
 
     private enum CodingKeys: String, CodingKey {
+        case examples
         case securitySchemes
         case schemas
         case headers
@@ -16,12 +17,15 @@ public struct SpecComponents: Codable, Equatable, Changeable {
         case requestBodies
         case responses
         case callbacks
-        case examples
     }
 
     // MARK: - Instance Properties
 
     private var extensionsContainer: SpecExtensionsContainer
+
+    /// An object to hold reusable example objects.
+    /// The keys must match the regular expression: `^[a-zA-Z0-9\.\-_]+$`.
+    public var examples: [String: SpecComponent<SpecExample>]?
 
     /// An object to hold reusable security scheme objects.
     /// The keys must match the regular expression: `^[a-zA-Z0-9\.\-_]+$`.
@@ -51,10 +55,6 @@ public struct SpecComponents: Codable, Equatable, Changeable {
     /// The keys must match the regular expression: `^[a-zA-Z0-9\.\-_]+$`.
     public var callbacks: [String: SpecComponent<SpecCallbacks>]?
 
-    /// An object to hold reusable example objects.
-    /// The keys must match the regular expression: `^[a-zA-Z0-9\.\-_]+$`.
-    public var examples: [String: SpecComponent<SpecExample>]?
-
     // TODO: add links
 
     /// The extensions properties.
@@ -69,6 +69,7 @@ public struct SpecComponents: Codable, Equatable, Changeable {
 
     /// Creates a new instance with the provided values.
     public init(
+        examples: [String: SpecComponent<SpecExample>]? = nil,
         securitySchemes: [String: SpecComponent<SpecSecurityScheme>]? = nil,
         schemas: [String: SpecComponent<SpecSchema>]? = nil,
         headers: [String: SpecComponent<SpecHeader>]? = nil,
@@ -76,11 +77,11 @@ public struct SpecComponents: Codable, Equatable, Changeable {
         requestBodies: [String: SpecComponent<SpecRequestBody>]? = nil,
         responses: [String: SpecComponent<SpecResponse>]? = nil,
         callbacks: [String: SpecComponent<SpecCallbacks>]? = nil,
-        examples: [String: SpecComponent<SpecExample>]? = nil,
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)
 
+        self.examples = examples
         self.securitySchemes = securitySchemes
         self.schemas = schemas
         self.headers = headers
@@ -88,7 +89,6 @@ public struct SpecComponents: Codable, Equatable, Changeable {
         self.requestBodies = requestBodies
         self.responses = responses
         self.callbacks = callbacks
-        self.examples = examples
     }
 
     /// Creates a new instance by decoding from the given decoder.
@@ -100,6 +100,7 @@ public struct SpecComponents: Codable, Equatable, Changeable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
+        examples = try container.decodeIfPresent(forKey: .examples)
         securitySchemes = try container.decodeIfPresent(forKey: .securitySchemes)
         schemas = try container.decodeIfPresent(forKey: .schemas)
         headers = try container.decodeIfPresent(forKey: .headers)
@@ -107,7 +108,6 @@ public struct SpecComponents: Codable, Equatable, Changeable {
         requestBodies = try container.decodeIfPresent(forKey: .requestBodies)
         responses = try container.decodeIfPresent(forKey: .responses)
         callbacks = try container.decodeIfPresent(forKey: .callbacks)
-        examples = try container.decodeIfPresent(forKey: .examples)
 
         extensionsContainer = try SpecExtensionsContainer(from: decoder)
     }
@@ -116,6 +116,14 @@ public struct SpecComponents: Codable, Equatable, Changeable {
 
     private func referenceURI(typeKey: CodingKeys, key: String) -> String {
         return "#/components/\(typeKey.rawValue)/\(key)"
+    }
+
+    // MARK: -
+
+    public func referenceURI(for example: SpecExample) -> String? {
+        return examples?
+            .first { $1.value == example }
+            .map { referenceURI(typeKey: CodingKeys.examples, key: $0.key) }
     }
 
     public func referenceURI(for securityScheme: SpecSecurityScheme) -> String? {
@@ -160,12 +168,6 @@ public struct SpecComponents: Codable, Equatable, Changeable {
             .map { referenceURI(typeKey: CodingKeys.callbacks, key: $0.key) }
     }
 
-    public func referenceURI(for example: SpecExample) -> String? {
-        return examples?
-            .first { $1.value == example }
-            .map { referenceURI(typeKey: CodingKeys.examples, key: $0.key) }
-    }
-
     /// Encodes this instance into the given encoder.
     ///
     /// This function throws an error if any values are invalid for the given
@@ -175,6 +177,7 @@ public struct SpecComponents: Codable, Equatable, Changeable {
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 
+        try container.encodeIfPresent(examples, forKey: .examples)
         try container.encodeIfPresent(securitySchemes, forKey: .securitySchemes)
         try container.encodeIfPresent(schemas, forKey: .schemas)
         try container.encodeIfPresent(headers, forKey: .headers)
@@ -182,7 +185,6 @@ public struct SpecComponents: Codable, Equatable, Changeable {
         try container.encodeIfPresent(requestBodies, forKey: .requestBodies)
         try container.encodeIfPresent(responses, forKey: .responses)
         try container.encodeIfPresent(callbacks, forKey: .callbacks)
-        try container.encodeIfPresent(examples, forKey: .examples)
 
         try extensionsContainer.encode(to: encoder)
     }

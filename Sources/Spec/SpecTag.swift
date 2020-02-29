@@ -10,7 +10,7 @@ public struct SpecTag: Codable, Equatable, Changeable {
     private enum CodingKeys: String, CodingKey {
         case name
         case description
-        case externalDocumentation = "externalDocs"
+        case externalDocs
     }
 
     // MARK: - Instance Properties
@@ -25,7 +25,7 @@ public struct SpecTag: Codable, Equatable, Changeable {
     public var description: String?
 
     /// Additional external documentation for this tag.
-    public var externalDocumentation: SpecExternalDocumentation?
+    public var externalDocs: SpecExternalDocs?
 
     /// The extensions properties.
     /// Keys will be prefixed by "x-" when encoding.
@@ -41,14 +41,14 @@ public struct SpecTag: Codable, Equatable, Changeable {
     public init(
         name: String,
         description: String? = nil,
-        externalDocumentation: SpecExternalDocumentation? = nil,
+        externalDocs: SpecExternalDocs? = nil,
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)
 
         self.name = name
         self.description = description
-        self.externalDocumentation = externalDocumentation
+        self.externalDocs = externalDocs
     }
 
     /// Creates a new instance by decoding from the given decoder.
@@ -62,7 +62,7 @@ public struct SpecTag: Codable, Equatable, Changeable {
 
         name = try container.decode(forKey: .name)
         description = try container.decodeIfPresent(forKey: .description)
-        externalDocumentation = try container.decodeIfPresent(forKey: .externalDocumentation)
+        externalDocs = try container.decodeIfPresent(forKey: .externalDocs)
 
         extensionsContainer = try SpecExtensionsContainer(from: decoder)
     }
@@ -79,7 +79,7 @@ public struct SpecTag: Codable, Equatable, Changeable {
 
         try container.encode(name, forKey: .name)
         try container.encodeIfPresent(description, forKey: .description)
-        try container.encodeIfPresent(externalDocumentation, forKey: .externalDocumentation)
+        try container.encodeIfPresent(externalDocs, forKey: .externalDocs)
 
         try extensionsContainer.encode(to: encoder)
     }

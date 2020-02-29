@@ -59,7 +59,7 @@
 		C006F1ED2406B9C800C3F783 /* SpecExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6740F2309572200C7B12C /* SpecExample.swift */; };
 		C006F1EE2406B9C800C3F783 /* SpecExampleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674122309572200C7B12C /* SpecExampleType.swift */; };
 		C006F1EF2406B9C800C3F783 /* SpecExtensionsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00411A6232457BC00FB5FBB /* SpecExtensionsContainer.swift */; };
-		C006F1F02406B9C800C3F783 /* SpecExternalDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */; };
+		C006F1F02406B9C800C3F783 /* SpecExternalDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocs.swift */; };
 		C006F1F12406B9C800C3F783 /* SpecMediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674382309572200C7B12C /* SpecMediaType.swift */; };
 		C006F1F22406B9C800C3F783 /* SpecOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674102309572200C7B12C /* SpecOperation.swift */; };
 		C006F1F32406B9C800C3F783 /* SpecPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674392309572200C7B12C /* SpecPath.swift */; };
@@ -336,9 +336,9 @@
 		C0F674732309572200C7B12C /* SpecServerVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674142309572200C7B12C /* SpecServerVariable.swift */; };
 		C0F674742309572200C7B12C /* SpecServerVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674142309572200C7B12C /* SpecServerVariable.swift */; };
 		C0F674752309572200C7B12C /* SpecServerVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674142309572200C7B12C /* SpecServerVariable.swift */; };
-		C0F674762309572200C7B12C /* SpecExternalDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */; };
-		C0F674772309572200C7B12C /* SpecExternalDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */; };
-		C0F674782309572200C7B12C /* SpecExternalDocumentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */; };
+		C0F674762309572200C7B12C /* SpecExternalDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocs.swift */; };
+		C0F674772309572200C7B12C /* SpecExternalDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocs.swift */; };
+		C0F674782309572200C7B12C /* SpecExternalDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674152309572200C7B12C /* SpecExternalDocs.swift */; };
 		C0F6747C2309572200C7B12C /* SpecComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674172309572200C7B12C /* SpecComponent.swift */; };
 		C0F6747D2309572200C7B12C /* SpecComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674172309572200C7B12C /* SpecComponent.swift */; };
 		C0F6747E2309572200C7B12C /* SpecComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F674172309572200C7B12C /* SpecComponent.swift */; };
@@ -582,8 +582,8 @@
 		C0F6768F230959B700C7B12C /* SpecSchemaXMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675462309578800C7B12C /* SpecSchemaXMLTests.swift */; };
 		C0F67690230959B700C7B12C /* SpecStringSchemaSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675522309578800C7B12C /* SpecStringSchemaSeeds.swift */; };
 		C0F67691230959B700C7B12C /* SpecStringSchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6755B2309578800C7B12C /* SpecStringSchemaTests.swift */; };
-		C0F676A4230959BD00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocumentationSeeds.swift */; };
-		C0F676A5230959BD00C7B12C /* SpecExternalDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocumentationTests.swift */; };
+		C0F676A4230959BD00C7B12C /* SpecExternalDocsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocsSeeds.swift */; };
+		C0F676A5230959BD00C7B12C /* SpecExternalDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocsTests.swift */; };
 		C0F676A6230959BD00C7B12C /* SpecServerSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6755C2309578800C7B12C /* SpecServerSeeds.swift */; };
 		C0F676A7230959BD00C7B12C /* SpecServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753A2309578800C7B12C /* SpecServerTests.swift */; };
 		C0F676A8230959BD00C7B12C /* SpecServerVariableSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675622309578800C7B12C /* SpecServerVariableSeeds.swift */; };
@@ -592,8 +592,8 @@
 		C0F676AB230959BD00C7B12C /* SpecTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753B2309578800C7B12C /* SpecTagTests.swift */; };
 		C0F676AC230959BD00C7B12C /* SpecVersionSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753D2309578800C7B12C /* SpecVersionSeeds.swift */; };
 		C0F676AD230959BD00C7B12C /* SpecVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675362309578800C7B12C /* SpecVersionTests.swift */; };
-		C0F676B2230959BE00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocumentationSeeds.swift */; };
-		C0F676B3230959BE00C7B12C /* SpecExternalDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocumentationTests.swift */; };
+		C0F676B2230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocsSeeds.swift */; };
+		C0F676B3230959BE00C7B12C /* SpecExternalDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocsTests.swift */; };
 		C0F676B4230959BE00C7B12C /* SpecServerSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6755C2309578800C7B12C /* SpecServerSeeds.swift */; };
 		C0F676B5230959BE00C7B12C /* SpecServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753A2309578800C7B12C /* SpecServerTests.swift */; };
 		C0F676B6230959BE00C7B12C /* SpecServerVariableSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675622309578800C7B12C /* SpecServerVariableSeeds.swift */; };
@@ -602,8 +602,8 @@
 		C0F676B9230959BE00C7B12C /* SpecTagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753B2309578800C7B12C /* SpecTagTests.swift */; };
 		C0F676BA230959BE00C7B12C /* SpecVersionSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753D2309578800C7B12C /* SpecVersionSeeds.swift */; };
 		C0F676BB230959BE00C7B12C /* SpecVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675362309578800C7B12C /* SpecVersionTests.swift */; };
-		C0F676C0230959BE00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocumentationSeeds.swift */; };
-		C0F676C1230959BE00C7B12C /* SpecExternalDocumentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocumentationTests.swift */; };
+		C0F676C0230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675392309578800C7B12C /* SpecExternalDocsSeeds.swift */; };
+		C0F676C1230959BE00C7B12C /* SpecExternalDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675352309578800C7B12C /* SpecExternalDocsTests.swift */; };
 		C0F676C2230959BE00C7B12C /* SpecServerSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6755C2309578800C7B12C /* SpecServerSeeds.swift */; };
 		C0F676C3230959BE00C7B12C /* SpecServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6753A2309578800C7B12C /* SpecServerTests.swift */; };
 		C0F676C4230959BE00C7B12C /* SpecServerVariableSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F675622309578800C7B12C /* SpecServerVariableSeeds.swift */; };
@@ -763,7 +763,7 @@
 		C0F674102309572200C7B12C /* SpecOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecOperation.swift; sourceTree = "<group>"; };
 		C0F674122309572200C7B12C /* SpecExampleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExampleType.swift; sourceTree = "<group>"; };
 		C0F674142309572200C7B12C /* SpecServerVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecServerVariable.swift; sourceTree = "<group>"; };
-		C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocumentation.swift; sourceTree = "<group>"; };
+		C0F674152309572200C7B12C /* SpecExternalDocs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocs.swift; sourceTree = "<group>"; };
 		C0F674172309572200C7B12C /* SpecComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecComponent.swift; sourceTree = "<group>"; };
 		C0F674192309572200C7B12C /* SpecInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecInfo.swift; sourceTree = "<group>"; };
 		C0F6741A2309572200C7B12C /* SpecContactInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecContactInfo.swift; sourceTree = "<group>"; };
@@ -833,11 +833,11 @@
 		C0F675302309578800C7B12C /* RangeReplaceableCollectionExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeReplaceableCollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		C0F675322309578800C7B12C /* YAMLDecoderCodingPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAMLDecoderCodingPathExtensionTests.swift; sourceTree = "<group>"; };
 		C0F675332309578800C7B12C /* JSONDecoderCodingPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoderCodingPathExtensionTests.swift; sourceTree = "<group>"; };
-		C0F675352309578800C7B12C /* SpecExternalDocumentationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocumentationTests.swift; sourceTree = "<group>"; };
+		C0F675352309578800C7B12C /* SpecExternalDocsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocsTests.swift; sourceTree = "<group>"; };
 		C0F675362309578800C7B12C /* SpecVersionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecVersionTests.swift; sourceTree = "<group>"; };
 		C0F675372309578800C7B12C /* SpecEmbeddedExampleSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecEmbeddedExampleSeeds.swift; sourceTree = "<group>"; };
 		C0F675382309578800C7B12C /* SpecExampleSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExampleSeeds.swift; sourceTree = "<group>"; };
-		C0F675392309578800C7B12C /* SpecExternalDocumentationSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocumentationSeeds.swift; sourceTree = "<group>"; };
+		C0F675392309578800C7B12C /* SpecExternalDocsSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecExternalDocsSeeds.swift; sourceTree = "<group>"; };
 		C0F6753A2309578800C7B12C /* SpecServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecServerTests.swift; sourceTree = "<group>"; };
 		C0F6753B2309578800C7B12C /* SpecTagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecTagTests.swift; sourceTree = "<group>"; };
 		C0F6753C2309578800C7B12C /* SpecServerVariableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecServerVariableTests.swift; sourceTree = "<group>"; };
@@ -1085,7 +1085,7 @@
 				C0F6740F2309572200C7B12C /* SpecExample.swift */,
 				C0F674122309572200C7B12C /* SpecExampleType.swift */,
 				C00411A6232457BC00FB5FBB /* SpecExtensionsContainer.swift */,
-				C0F674152309572200C7B12C /* SpecExternalDocumentation.swift */,
+				C0F674152309572200C7B12C /* SpecExternalDocs.swift */,
 				C0F674382309572200C7B12C /* SpecMediaType.swift */,
 				C0F674102309572200C7B12C /* SpecOperation.swift */,
 				C0F674392309572200C7B12C /* SpecPath.swift */,
@@ -1265,8 +1265,8 @@
 				C0F675632309578800C7B12C /* SpecEmbeddedExampleTests.swift */,
 				C0F675382309578800C7B12C /* SpecExampleSeeds.swift */,
 				C0F675612309578800C7B12C /* SpecExampleTests.swift */,
-				C0F675392309578800C7B12C /* SpecExternalDocumentationSeeds.swift */,
-				C0F675352309578800C7B12C /* SpecExternalDocumentationTests.swift */,
+				C0F675392309578800C7B12C /* SpecExternalDocsSeeds.swift */,
+				C0F675352309578800C7B12C /* SpecExternalDocsTests.swift */,
 				C0F676DC23096AE100C7B12C /* SpecMediaTypeSeeds.swift */,
 				C0F676E023096AF100C7B12C /* SpecMediaTypeTests.swift */,
 				C06DB6B22349289100BCF093 /* SpecOperationSeeds.swift */,
@@ -2033,7 +2033,7 @@
 				C006F1EB2406B9C800C3F783 /* SpecComponentType.swift in Sources */,
 				C006F1ED2406B9C800C3F783 /* SpecExample.swift in Sources */,
 				C006F2052406B9D700C3F783 /* SpecParameterSchema.swift in Sources */,
-				C006F1F02406B9C800C3F783 /* SpecExternalDocumentation.swift in Sources */,
+				C006F1F02406B9C800C3F783 /* SpecExternalDocs.swift in Sources */,
 				C006F1EE2406B9C800C3F783 /* SpecExampleType.swift in Sources */,
 				C006F2022406B9D200C3F783 /* SpecLicenseInfo.swift in Sources */,
 				C006F1F52406B9C800C3F783 /* SpecReferenceRegistry.swift in Sources */,
@@ -2160,7 +2160,7 @@
 				C0F674DE2309572200C7B12C /* Spec.swift in Sources */,
 				C0F6745A2309572200C7B12C /* SpecDocumentContext.swift in Sources */,
 				C0F675172309572200C7B12C /* YAMLDecoder+CodingPath.swift in Sources */,
-				C0F674782309572200C7B12C /* SpecExternalDocumentation.swift in Sources */,
+				C0F674782309572200C7B12C /* SpecExternalDocs.swift in Sources */,
 				C0F674CF2309572200C7B12C /* SpecParameterSchema.swift in Sources */,
 				C0F674F32309572200C7B12C /* SpecHeaderSchema.swift in Sources */,
 				C0F674F02309572200C7B12C /* SpecHeaderSerialization.swift in Sources */,
@@ -2218,7 +2218,7 @@
 				C0F67685230959B700C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676D6230959CC00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
 				C0F6768F230959B700C7B12C /* SpecSchemaXMLTests.swift in Sources */,
-				C0F676C0230959BE00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */,
+				C0F676C0230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F643232E885E00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
 				C0A2F634232E6D0A00FD9764 /* SpecRequestBodyEncodingSeeds.swift in Sources */,
 				C00411A5232457A600FB5FBB /* StringExtensionsTests.swift in Sources */,
@@ -2241,7 +2241,7 @@
 				C0F67690230959B700C7B12C /* SpecStringSchemaSeeds.swift in Sources */,
 				C0F676D9230959CC00C7B12C /* String+YAML.swift in Sources */,
 				C0A2F62B232E666900FD9764 /* SpecHeaderSchemaTests.swift in Sources */,
-				C0F676C1230959BE00C7B12C /* SpecExternalDocumentationTests.swift in Sources */,
+				C0F676C1230959BE00C7B12C /* SpecExternalDocsTests.swift in Sources */,
 				C0F676D8230959CC00C7B12C /* Matchers.swift in Sources */,
 				C0F67645230959A800C7B12C /* SpecContactInfoTests.swift in Sources */,
 				C0A2F616232E535200FD9764 /* SpecParameterMetadataTests.swift in Sources */,
@@ -2352,7 +2352,7 @@
 				C0F674DD2309572200C7B12C /* Spec.swift in Sources */,
 				C0F674592309572200C7B12C /* SpecDocumentContext.swift in Sources */,
 				C0F675162309572200C7B12C /* YAMLDecoder+CodingPath.swift in Sources */,
-				C0F674772309572200C7B12C /* SpecExternalDocumentation.swift in Sources */,
+				C0F674772309572200C7B12C /* SpecExternalDocs.swift in Sources */,
 				C0F674CE2309572200C7B12C /* SpecParameterSchema.swift in Sources */,
 				C0F674F22309572200C7B12C /* SpecHeaderSchema.swift in Sources */,
 				C0F674EF2309572200C7B12C /* SpecHeaderSerialization.swift in Sources */,
@@ -2410,7 +2410,7 @@
 				C0F6766F230959B700C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676CA230959CB00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
 				C0F67679230959B700C7B12C /* SpecSchemaXMLTests.swift in Sources */,
-				C0F676B2230959BE00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */,
+				C0F676B2230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F642232E885D00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
 				C0A2F633232E6D0A00FD9764 /* SpecRequestBodyEncodingSeeds.swift in Sources */,
 				C00411A4232457A600FB5FBB /* StringExtensionsTests.swift in Sources */,
@@ -2433,7 +2433,7 @@
 				C0F6767A230959B700C7B12C /* SpecStringSchemaSeeds.swift in Sources */,
 				C0F676CD230959CB00C7B12C /* String+YAML.swift in Sources */,
 				C0A2F62A232E666900FD9764 /* SpecHeaderSchemaTests.swift in Sources */,
-				C0F676B3230959BE00C7B12C /* SpecExternalDocumentationTests.swift in Sources */,
+				C0F676B3230959BE00C7B12C /* SpecExternalDocsTests.swift in Sources */,
 				C0F676CC230959CB00C7B12C /* Matchers.swift in Sources */,
 				C0F6763F230959A800C7B12C /* SpecContactInfoTests.swift in Sources */,
 				C0A2F615232E535100FD9764 /* SpecParameterMetadataTests.swift in Sources */,
@@ -2544,7 +2544,7 @@
 				C0F674DC2309572200C7B12C /* Spec.swift in Sources */,
 				C0F674582309572200C7B12C /* SpecDocumentContext.swift in Sources */,
 				C0F675152309572200C7B12C /* YAMLDecoder+CodingPath.swift in Sources */,
-				C0F674762309572200C7B12C /* SpecExternalDocumentation.swift in Sources */,
+				C0F674762309572200C7B12C /* SpecExternalDocs.swift in Sources */,
 				C0F674CD2309572200C7B12C /* SpecParameterSchema.swift in Sources */,
 				C0F674F12309572200C7B12C /* SpecHeaderSchema.swift in Sources */,
 				C0F674EE2309572200C7B12C /* SpecHeaderSerialization.swift in Sources */,
@@ -2602,7 +2602,7 @@
 				C0F67659230959B600C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676D0230959CC00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
 				C0F67663230959B600C7B12C /* SpecSchemaXMLTests.swift in Sources */,
-				C0F676A4230959BD00C7B12C /* SpecExternalDocumentationSeeds.swift in Sources */,
+				C0F676A4230959BD00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F641232E885D00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
 				C0A2F632232E6D0900FD9764 /* SpecRequestBodyEncodingSeeds.swift in Sources */,
 				C00411A3232457A600FB5FBB /* StringExtensionsTests.swift in Sources */,
@@ -2625,7 +2625,7 @@
 				C0F67664230959B600C7B12C /* SpecStringSchemaSeeds.swift in Sources */,
 				C0F676D3230959CC00C7B12C /* String+YAML.swift in Sources */,
 				C0A2F629232E666800FD9764 /* SpecHeaderSchemaTests.swift in Sources */,
-				C0F676A5230959BD00C7B12C /* SpecExternalDocumentationTests.swift in Sources */,
+				C0F676A5230959BD00C7B12C /* SpecExternalDocsTests.swift in Sources */,
 				C0F676D2230959CC00C7B12C /* Matchers.swift in Sources */,
 				C0F67639230959A700C7B12C /* SpecContactInfoTests.swift in Sources */,
 				C0A2F614232E535100FD9764 /* SpecParameterMetadataTests.swift in Sources */,
