@@ -65,21 +65,21 @@ public struct SpecOperation: Codable, Equatable, Changeable {
     /// A map between an event name and its out-of band callbacks related to the parent operation.
     public var callbacks: [String: SpecComponent<SpecCallbacks>]?
 
-    /// A declaration of which security mechanisms can be used for this operation.
-    /// The list of values includes alternative security requirement objects that can be used.
-    /// Only one of the security requirement objects need to be satisfied to authorize a request.
-    /// This definition overrides any declared top-level security.
-    /// To remove a top-level security declaration, an empty array can be used.
-    public var security: [String: [String]]?
+    /// A list of tags for API documentation control.
+    /// Tags can be used for logical grouping of operations by resources or any other qualifier.
+    public var tags: [String]?
 
     /// An alternative server array to service this operation.
     /// If an alternative server object is specified at the path object or root level,
     /// it will be overridden by this value.
     public var servers: [SpecServer]?
 
-    /// A list of tags for API documentation control.
-    /// Tags can be used for logical grouping of operations by resources or any other qualifier.
-    public var tags: [String]?
+    /// A declaration of which security mechanisms can be used for this operation.
+    /// The list of values includes alternative security requirement objects that can be used.
+    /// Only one of the security requirement objects need to be satisfied to authorize a request.
+    /// This definition overrides any declared top-level security.
+    /// To remove a top-level security declaration, an empty array can be used.
+    public var security: [SpecSecurityRequirement]?
 
     /// The extensions properties.
     /// Keys will be prefixed by "x-" when encoding.
@@ -102,9 +102,9 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         parameters: [SpecComponent<SpecParameter>]? = nil,
         requestBody: SpecComponent<SpecRequestBody>? = nil,
         callbacks: [String: SpecComponent<SpecCallbacks>]? = nil,
-        security: [String: [String]]? = nil,
-        servers: [SpecServer]? = nil,
         tags: [String]? = nil,
+        servers: [SpecServer]? = nil,
+        security: [SpecSecurityRequirement]? = nil,
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)
@@ -119,9 +119,9 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         self.parameters = parameters
         self.requestBody = requestBody
         self.callbacks = callbacks
-        self.security = security
-        self.servers = servers
         self.tags = tags
+        self.servers = servers
+        self.security = security
     }
 
     /// Creates a new instance by decoding from the given decoder.
@@ -143,15 +143,9 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         parameters = try container.decodeIfPresent(forKey: .parameters)
         requestBody = try container.decodeIfPresent(forKey: .requestBody)
         callbacks = try container.decodeIfPresent(forKey: .callbacks)
-
-        security = try container
-            .decodeIfPresent([[String: [String]]].self, forKey: .security)
-            .map { security in
-                Dictionary(security.compactMap { $0.first }) { $1 }
-            }
-
-        servers = try container.decodeIfPresent(forKey: .servers)
         tags = try container.decodeIfPresent(forKey: .tags)
+        servers = try container.decodeIfPresent(forKey: .servers)
+        security = try container.decodeIfPresent(forKey: .security)
 
         extensionsContainer = try SpecExtensionsContainer(from: decoder)
     }
@@ -176,14 +170,9 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         try container.encodeIfPresent(parameters, forKey: .parameters)
         try container.encodeIfPresent(requestBody, forKey: .requestBody)
         try container.encodeIfPresent(callbacks, forKey: .callbacks)
-
-        try container.encodeIfPresent(
-            security?.map { [$0.key: $0.value] },
-            forKey: .security
-        )
-
-        try container.encodeIfPresent(servers, forKey: .servers)
         try container.encodeIfPresent(tags, forKey: .tags)
+        try container.encodeIfPresent(servers, forKey: .servers)
+        try container.encodeIfPresent(security, forKey: .security)
 
         try extensionsContainer.encode(to: encoder)
     }

@@ -117,6 +117,16 @@
 		C006F883240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
 		C006F884240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
 		C006F885240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
+		C006F8D9240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */; };
+		C006F8DA240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */; };
+		C006F8DB240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */; };
+		C006F8DC240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */; };
+		C006F8DE240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8DD240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift */; };
+		C006F8DF240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8DD240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift */; };
+		C006F8E0240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8DD240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift */; };
+		C006F8E5240B22BE00C3F783 /* SpecSecurityRequirementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8E1240B1EC100C3F783 /* SpecSecurityRequirementTests.swift */; };
+		C006F8E6240B22C800C3F783 /* SpecSecurityRequirementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8E1240B1EC100C3F783 /* SpecSecurityRequirementTests.swift */; };
+		C006F8E7240B22C900C3F783 /* SpecSecurityRequirementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F8E1240B1EC100C3F783 /* SpecSecurityRequirementTests.swift */; };
 		C03756482349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
 		C03756492349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
 		C037564A2349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
@@ -713,6 +723,10 @@
 		C004120E2325AC8300FB5FBB /* SpecRequestBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodyTests.swift; sourceTree = "<group>"; };
 		C006F1CC2406B50900C3F783 /* SwaggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwaggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C006F881240AC0C900C3F783 /* Changeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Changeable.swift; sourceTree = "<group>"; };
+		C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecSecurityRequirement.swift; sourceTree = "<group>"; };
+		C006F8DD240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecSecurityRequirementSeeds.swift; sourceTree = "<group>"; };
+		C006F8E1240B1EC100C3F783 /* SpecSecurityRequirementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecSecurityRequirementTests.swift; sourceTree = "<group>"; };
+		C006F8E8240B23B400C3F783 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		C02F12EB24059886001166D9 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		C02F12ED240598A1001166D9 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C02F12EE240599A7001166D9 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
@@ -1092,6 +1106,7 @@
 				C0F6743C2309572200C7B12C /* SpecReference.swift */,
 				C0F6742E2309572200C7B12C /* SpecReferenceRegistry.swift */,
 				C0F6743B2309572200C7B12C /* SpecResponse.swift */,
+				C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */,
 				C0F6743E2309572200C7B12C /* SpecServer.swift */,
 				C0F674142309572200C7B12C /* SpecServerVariable.swift */,
 				C0F674442309572200C7B12C /* SpecTag.swift */,
@@ -1275,6 +1290,8 @@
 				C037564B2349EE4B00ABFAA9 /* SpecPathTests.swift */,
 				C0A2F647232E93B300FD9764 /* SpecResponseSeeds.swift */,
 				C0A2F64B232E943F00FD9764 /* SpecResponseTests.swift */,
+				C006F8DD240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift */,
+				C006F8E1240B1EC100C3F783 /* SpecSecurityRequirementTests.swift */,
 				C0F6755C2309578800C7B12C /* SpecServerSeeds.swift */,
 				C0F6753A2309578800C7B12C /* SpecServerTests.swift */,
 				C0F675622309578800C7B12C /* SpecServerVariableSeeds.swift */,
@@ -1365,6 +1382,7 @@
 				C0F675212309578800C7B12C /* Tools */,
 				C2BF87E822C7C478006DD5A6 /* Info.plist */,
 				C2BF87EC22C7C997006DD5A6 /* LinuxMain.swift */,
+				C006F8E8240B23B400C3F783 /* XCTestManifests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -2008,6 +2026,7 @@
 				C006F2042406B9D700C3F783 /* SpecParameterMetadata.swift in Sources */,
 				C006F1E22406B9C300C3F783 /* KeyedDecodingContainerProtocol+Extensions.swift in Sources */,
 				C006F20F2406B9E000C3F783 /* SpecBooleanSchema.swift in Sources */,
+				C006F8DC240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */,
 				C006F1EF2406B9C800C3F783 /* SpecExtensionsContainer.swift in Sources */,
 				C006F1F32406B9C800C3F783 /* SpecPath.swift in Sources */,
 				C006F2162406B9E000C3F783 /* SpecSchema.swift in Sources */,
@@ -2096,6 +2115,7 @@
 				C0F674F62309572200C7B12C /* SpecHeaderMetadata.swift in Sources */,
 				C0F6750E2309572200C7B12C /* Collection+Extensions.swift in Sources */,
 				C0F674872309572200C7B12C /* SpecLicenseInfo.swift in Sources */,
+				C006F8DB240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */,
 				C0F674B12309572200C7B12C /* SpecArraySchema.swift in Sources */,
 				C0F675052309572200C7B12C /* RangeReplaceableCollection+Extensions.swift in Sources */,
 				C0F674A22309572200C7B12C /* SpecIntegerFormat.swift in Sources */,
@@ -2183,6 +2203,7 @@
 				C0F67646230959A800C7B12C /* SpecInfoSeeds.swift in Sources */,
 				C0B0E32E232DA2C0006A8041 /* SpecExampleSeeds.swift in Sources */,
 				C0A2F631232E67EC00FD9764 /* SpecHeaderTests.swift in Sources */,
+				C006F8E0240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */,
 				C0CEED43232404730055FBF1 /* SpecSecuritySchemeTests.swift in Sources */,
 				C0B0E309232D4F4D006A8041 /* SpecArraySchemaSeeds.swift in Sources */,
 				C0B0E322232D7C22006A8041 /* SpecSchemaMetadataTests.swift in Sources */,
@@ -2217,6 +2238,7 @@
 				C0F67684230959B700C7B12C /* SpecNumberSchemaSeeds.swift in Sources */,
 				C0F67685230959B700C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676D6230959CC00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
+				C006F8E7240B22C900C3F783 /* SpecSecurityRequirementTests.swift in Sources */,
 				C0F6768F230959B700C7B12C /* SpecSchemaXMLTests.swift in Sources */,
 				C0F676C0230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F643232E885E00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
@@ -2288,6 +2310,7 @@
 				C0F674F52309572200C7B12C /* SpecHeaderMetadata.swift in Sources */,
 				C0F6750D2309572200C7B12C /* Collection+Extensions.swift in Sources */,
 				C0F674862309572200C7B12C /* SpecLicenseInfo.swift in Sources */,
+				C006F8D9240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */,
 				C0F674B02309572200C7B12C /* SpecArraySchema.swift in Sources */,
 				C0F675042309572200C7B12C /* RangeReplaceableCollection+Extensions.swift in Sources */,
 				C0F674A12309572200C7B12C /* SpecIntegerFormat.swift in Sources */,
@@ -2375,6 +2398,7 @@
 				C0F67640230959A800C7B12C /* SpecInfoSeeds.swift in Sources */,
 				C0B0E32D232DA2C0006A8041 /* SpecExampleSeeds.swift in Sources */,
 				C0A2F630232E67EC00FD9764 /* SpecHeaderTests.swift in Sources */,
+				C006F8DE240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */,
 				C0CEED42232404730055FBF1 /* SpecSecuritySchemeTests.swift in Sources */,
 				C0B0E308232D4F4D006A8041 /* SpecArraySchemaSeeds.swift in Sources */,
 				C0B0E321232D7C21006A8041 /* SpecSchemaMetadataTests.swift in Sources */,
@@ -2409,6 +2433,7 @@
 				C0F6766E230959B700C7B12C /* SpecNumberSchemaSeeds.swift in Sources */,
 				C0F6766F230959B700C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676CA230959CB00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
+				C006F8E5240B22BE00C3F783 /* SpecSecurityRequirementTests.swift in Sources */,
 				C0F67679230959B700C7B12C /* SpecSchemaXMLTests.swift in Sources */,
 				C0F676B2230959BE00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F642232E885D00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
@@ -2480,6 +2505,7 @@
 				C0F674F42309572200C7B12C /* SpecHeaderMetadata.swift in Sources */,
 				C0F6750C2309572200C7B12C /* Collection+Extensions.swift in Sources */,
 				C0F674852309572200C7B12C /* SpecLicenseInfo.swift in Sources */,
+				C006F8DA240B192200C3F783 /* SpecSecurityRequirement.swift in Sources */,
 				C0F674AF2309572200C7B12C /* SpecArraySchema.swift in Sources */,
 				C0F675032309572200C7B12C /* RangeReplaceableCollection+Extensions.swift in Sources */,
 				C0F674A02309572200C7B12C /* SpecIntegerFormat.swift in Sources */,
@@ -2567,6 +2593,7 @@
 				C0F6763A230959A700C7B12C /* SpecInfoSeeds.swift in Sources */,
 				C0B0E32C232DA2BF006A8041 /* SpecExampleSeeds.swift in Sources */,
 				C0A2F62F232E67EB00FD9764 /* SpecHeaderTests.swift in Sources */,
+				C006F8DF240B1EB300C3F783 /* SpecSecurityRequirementSeeds.swift in Sources */,
 				C0CEED41232404730055FBF1 /* SpecSecuritySchemeTests.swift in Sources */,
 				C0B0E307232D4F4D006A8041 /* SpecArraySchemaSeeds.swift in Sources */,
 				C0B0E320232D7C21006A8041 /* SpecSchemaMetadataTests.swift in Sources */,
@@ -2601,6 +2628,7 @@
 				C0F67658230959B600C7B12C /* SpecNumberSchemaSeeds.swift in Sources */,
 				C0F67659230959B600C7B12C /* SpecNumberSchemaTests.swift in Sources */,
 				C0F676D0230959CC00C7B12C /* JSONDecoder+Extensions.swift in Sources */,
+				C006F8E6240B22C800C3F783 /* SpecSecurityRequirementTests.swift in Sources */,
 				C0F67663230959B600C7B12C /* SpecSchemaXMLTests.swift in Sources */,
 				C0F676A4230959BD00C7B12C /* SpecExternalDocsSeeds.swift in Sources */,
 				C0A2F641232E885D00FD9764 /* SpecRequestBodySeeds.swift in Sources */,
