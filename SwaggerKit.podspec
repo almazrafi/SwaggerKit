@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = "SwaggerKit"
-    spec.version = "1.0.0-alpha.3"
+    spec.version = "1.0.0-alpha.4"
     spec.summary = "A swifty parser for OpenAPI (Swagger) specs"
 
     spec.homepage = "https://github.com/almazrafi/SwaggerKit"
