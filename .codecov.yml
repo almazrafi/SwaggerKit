@@ -18,3 +18,5 @@ comment:
 
 ignore:
   - Tests/**/*
+  - Pods/**/*
+  - Scripts/**/*
