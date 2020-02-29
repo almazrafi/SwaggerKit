@@ -10,7 +10,7 @@ coverage:
     changes:
       default:
         threshold: 1.0%
-    patch: off
+    patch: false
 
 comment:
   layout: "flags, files"
