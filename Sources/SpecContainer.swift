@@ -5,7 +5,7 @@ public final class SpecContainer {
     // MARK: - Instance Properties
 
     public private(set) var allDocuments: [SpecDocument] = []
-    public private(set) var allComponents: [String: Any] = [:]
+    public private(set) var allComponents: [String: AnyObject] = [:]
 
     public let specDocument: SpecDocument
     public let spec: Spec
