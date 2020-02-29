@@ -11,10 +11,12 @@ coverage:
     project:
       default:
         threshold: 1.0%
+    patch:
+      default:
+        threshold: 10.0%
     changes:
       default:
         threshold: 1.0%
-    patch: off
 
 comment:
   layout: "flags, files"
