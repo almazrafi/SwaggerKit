@@ -17,28 +17,28 @@ final class SpecVersionTests: QuickSpec {
             beforeEach {
                 version = SpecVersionSeeds.full
                 versionYAML = SpecVersionSeeds.fullYAML
+            }
 
-                it("should be correctly decoded from YAML string") {
-                    do {
-                        let decodedVersion = try YAMLDecoder.test.decode(
-                            SpecVersion.self,
-                            from: versionYAML
-                        )
+            it("should be correctly decoded from YAML string") {
+                do {
+                    let decodedVersion = try YAMLDecoder.test.decode(
+                        SpecVersion.self,
+                        from: versionYAML
+                    )
 
-                        expect(decodedVersion).to(equal(version))
-                    } catch {
-                        fail("Test encountered unexpected error: \(error)")
-                    }
+                    expect(decodedVersion).to(equal(version))
+                } catch {
+                    fail("Test encountered unexpected error: \(error)")
                 }
+            }
 
-                it("should be correctly encoded to YAML string") {
-                    do {
-                        let encodedVersionYAML = try YAMLEncoder.test.encode(version)
+            it("should be correctly encoded to YAML string") {
+                do {
+                    let encodedVersionYAML = try YAMLEncoder.test.encode(version)
 
-                        expect(encodedVersionYAML).to(equal(try versionYAML.yamlSorted()))
-                    } catch {
-                        fail("Test encountered unexpected error: \(error)")
-                    }
+                    expect(encodedVersionYAML).to(equal(try versionYAML.yamlSorted()))
+                } catch {
+                    fail("Test encountered unexpected error: \(error)")
                 }
             }
         }

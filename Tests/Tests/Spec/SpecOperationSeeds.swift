@@ -32,8 +32,7 @@ enum SpecOperationSeeds {
           4XX:
             $ref: '#/components/responses/Error'
         security:
-        - authorization:
-          - apps:read
+        \(SpecSecurityRequirementSeeds.optionalYAML.yamlArrayItem())
         """
 
     static let getApps = SpecOperation(
@@ -43,9 +42,7 @@ enum SpecOperationSeeds {
             "200": SpecComponent(referenceURI: "#/components/responses/Apps"),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
         ],
-        security: [
-            "authorization": ["apps:read"]
-        ]
+        security: [SpecSecurityRequirementSeeds.optional]
     )
 
     static let postAppYAML = """
@@ -61,9 +58,7 @@ enum SpecOperationSeeds {
         requestBody:
         \(SpecRequestBodySeeds.appInfoYAML.yamlIndented(level: 1))
         security:
-        - authorization:
-          - apps:read
-          - apps:write
+        \(SpecSecurityRequirementSeeds.oauth2YAML.yamlArrayItem())
         """
 
     static let postApp = SpecOperation(
@@ -75,9 +70,7 @@ enum SpecOperationSeeds {
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
         ],
         requestBody: SpecComponent(value: SpecRequestBodySeeds.appInfo),
-        security: [
-            "authorization": ["apps:read", "apps:write"]
-        ]
+        security: [SpecSecurityRequirementSeeds.oauth2]
     )
 
     static let postSubscriptionYAML = """
@@ -105,8 +98,8 @@ enum SpecOperationSeeds {
         responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],
         requestBody: SpecComponent(referenceURI: "#/components/requestBodies/Subscription"),
         callbacks: ["event": SpecComponent(value: SpecCallbacksSeeds.subscription)],
-        servers: [SpecServerSeeds.deprecated],
         tags: ["subscriptions", "private"],
+        servers: [SpecServerSeeds.deprecated],
         extensions: ["private": true]
     )
 }

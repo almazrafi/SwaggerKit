@@ -30,9 +30,9 @@ public struct Spec: Codable, Equatable, Changeable {
 
     public var tags: [SpecTag]?
     public var servers: [SpecServer]?
-    public var security: [String: [String]]?
-    public var paths: [String: SpecComponent<SpecPath>]
+    public var security: [SpecSecurityRequirement]?
     public var components: SpecComponents?
+    public var paths: [String: SpecComponent<SpecPath>]
 
     /// The extensions properties.
     /// Keys will be prefixed by "x-" when encoding.
@@ -50,9 +50,9 @@ public struct Spec: Codable, Equatable, Changeable {
         externalDocs: SpecExternalDocs? = nil,
         tags: [SpecTag]? = nil,
         servers: [SpecServer]? = nil,
-        security: [String: [String]]? = nil,
-        paths: [String: SpecComponent<SpecPath>],
+        security: [SpecSecurityRequirement]? = nil,
         components: SpecComponents? = nil,
+        paths: [String: SpecComponent<SpecPath>],
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)
@@ -64,8 +64,8 @@ public struct Spec: Codable, Equatable, Changeable {
         self.tags = tags
         self.servers = servers
         self.security = security
-        self.paths = paths
         self.components = components
+        self.paths = paths
     }
 
     public init(from decoder: Decoder) throws {
@@ -86,15 +86,9 @@ public struct Spec: Codable, Equatable, Changeable {
 
         tags = try container.decodeIfPresent(forKey: .tags)
         servers = try container.decodeIfPresent(forKey: .servers)
-
-        security = try container
-            .decodeIfPresent([[String: [String]]].self, forKey: .security)
-            .map { security in
-                Dictionary(security.compactMap { $0.first }) { $1 }
-            }
-
-        paths = try container.decode(forKey: .paths)
+        security = try container.decodeIfPresent(forKey: .security)
         components = try container.decodeIfPresent(forKey: .components)
+        paths = try container.decode(forKey: .paths)
 
         extensionsContainer = try SpecExtensionsContainer(from: decoder)
     }
@@ -119,14 +113,9 @@ public struct Spec: Codable, Equatable, Changeable {
 
         try container.encodeIfPresent(tags, forKey: .tags)
         try container.encodeIfPresent(servers, forKey: .servers)
-
-        try container.encodeIfPresent(
-            security?.map { [$0.key: $0.value] },
-            forKey: .security
-        )
-
-        try container.encode(paths, forKey: .paths)
+        try container.encodeIfPresent(security, forKey: .security)
         try container.encodeIfPresent(components, forKey: .components)
+        try container.encode(paths, forKey: .paths)
 
         try extensionsContainer.encode(to: encoder)
     }
