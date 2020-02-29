@@ -707,7 +707,7 @@
 		C00412062325A79600FB5FBB /* SpecRequestBodyMediaTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodyMediaTypeTests.swift; sourceTree = "<group>"; };
 		C004120A2325AB1700FB5FBB /* SpecRequestBodySeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodySeeds.swift; sourceTree = "<group>"; };
 		C004120E2325AC8300FB5FBB /* SpecRequestBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodyTests.swift; sourceTree = "<group>"; };
-		C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwaggerKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C006F1CC2406B50900C3F783 /* SwaggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwaggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02F12EB24059886001166D9 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		C02F12ED240598A1001166D9 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C02F12EE240599A7001166D9 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
@@ -1024,7 +1024,7 @@
 				C0AE177A21F677E60070DD72 /* SwaggerKit.framework */,
 				C0AE179821F6793A0070DD72 /* SwaggerKit Tests macOS.xctest */,
 				C0A6036721F680B9009EC42C /* SwaggerKit Tests tvOS.xctest */,
-				C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */,
+				C006F1CC2406B50900C3F783 /* SwaggerKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1469,7 +1469,7 @@
 			);
 			name = "SwaggerKit watchOS";
 			productName = "SwaggerKit watchOS";
-			productReference = C006F1CC2406B50900C3F783 /* SwaggerKit_watchOS.framework */;
+			productReference = C006F1CC2406B50900C3F783 /* SwaggerKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C080D0F321F66BD7003FBCF4 /* SwaggerKit tvOS */ = {
@@ -2689,7 +2689,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -2721,7 +2721,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.SwaggerKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = SwaggerKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

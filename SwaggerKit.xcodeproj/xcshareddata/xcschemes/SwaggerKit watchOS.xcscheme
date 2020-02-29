@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C006F1CB2406B50900C3F783"
-               BuildableName = "SwaggerKit_watchOS.framework"
+               BuildableName = "SwaggerKit.framework"
                BlueprintName = "SwaggerKit watchOS"
                ReferencedContainer = "container:SwaggerKit.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C006F1CB2406B50900C3F783"
-            BuildableName = "SwaggerKit_watchOS.framework"
+            BuildableName = "SwaggerKit.framework"
             BlueprintName = "SwaggerKit watchOS"
             ReferencedContainer = "container:SwaggerKit.xcodeproj">
          </BuildableReference>
