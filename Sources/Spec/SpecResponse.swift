@@ -4,7 +4,7 @@ import Foundation
 /// Describes a single response from an API Operation, including design-time,
 /// static links to operations based on the response.
 /// Get more info: https://swagger.io/specification/#responseObject
-public struct SpecResponse: Codable, Equatable {
+public struct SpecResponse: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

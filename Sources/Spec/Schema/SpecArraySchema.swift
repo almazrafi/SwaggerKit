@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing an array schema type.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecArraySchema: Codable, Equatable {
+public struct SpecArraySchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

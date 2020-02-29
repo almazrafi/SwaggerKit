@@ -6,7 +6,7 @@ import Foundation
 /// OAuth2's common flows (implicit, password, application and access code)
 /// and OpenID Connect Discovery.
 /// Get more info: https://swagger.io/specification/#securitySchemeObject
-public struct SpecSecurityScheme: Codable, Equatable {
+public struct SpecSecurityScheme: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

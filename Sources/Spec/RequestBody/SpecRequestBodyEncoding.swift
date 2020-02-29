@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing an encoding applied to a single schema property of request body.
 /// Get more info: https://swagger.io/specification/#encodingObject
-public struct SpecRequestBodyEncoding: Codable, Equatable {
+public struct SpecRequestBodyEncoding: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

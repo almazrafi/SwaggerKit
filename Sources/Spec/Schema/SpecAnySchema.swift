@@ -3,7 +3,7 @@ import Foundation
 /// An object representing an any schema type.
 /// This schema matches any data type – numbers, strings, objects, and so on.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecAnySchema: Codable, Equatable {
+public struct SpecAnySchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

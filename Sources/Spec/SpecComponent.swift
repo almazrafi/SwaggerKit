@@ -27,24 +27,25 @@ public final class SpecComponent<T: Codable>: Codable {
 
     // MARK: - Initializers
 
-    /// Creates a new instance with the provided type.
-    public init(type: SpecComponentType<T>) {
-        self.type = type
-    }
-
     /// Creates a new instance with the provided value.
-    public convenience init(value: T) {
-        self.init(type: .value(value))
-    }
-
-    /// Creates a new instance with the provided reference.
-    public convenience init(reference: SpecReference<T>) {
-        self.init(type: .reference(reference))
+    public init(value: T) {
+        self.type = .value(value)
     }
 
     /// Creates a new instance with the provided reference URI.
-    public convenience init(referenceURI: String) {
-        self.init(type: .reference(SpecReference(uri: referenceURI)))
+    public init(referenceURI: String) {
+        self.type = .reference(SpecReference(uri: referenceURI))
+    }
+
+    /// Creates a new instance with the provided type.
+    public convenience init(type: SpecComponentType<T>) {
+        switch type {
+        case let .reference(reference):
+            self.init(referenceURI: reference.uri)
+
+        case let .value(value):
+            self.init(value: value)
+        }
     }
 
     /// Creates a new instance by decoding from the given decoder.

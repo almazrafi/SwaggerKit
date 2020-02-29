@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Spec: Codable, Equatable {
+public struct Spec: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

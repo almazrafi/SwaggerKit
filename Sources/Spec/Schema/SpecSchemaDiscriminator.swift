@@ -7,7 +7,7 @@ import Foundation
 /// based on the value associated with it.
 /// When using the discriminator, inline schemas will not be considered.
 /// Get more info: https://swagger.io/specification/#discriminatorObject
-public struct SpecSchemaDiscriminator: Codable, Equatable {
+public struct SpecSchemaDiscriminator: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

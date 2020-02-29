@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a parameter.
 /// Get more info: https://swagger.io/specification/#parameterObject
-public struct SpecParameter: Codable, Equatable {
+public struct SpecParameter: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

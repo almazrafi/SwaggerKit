@@ -42,7 +42,7 @@ enum SpecSchemaMetadataSeeds {
 
     static let uid = SpecSchemaMetadata(
         description: "Unique identifier of the resource.",
-        xml: SpecComponent(value: SpecSchemaXMLSeeds.attribute),
+        xml: SpecSchemaXMLSeeds.attribute,
         isReadOnly: true,
         example: SpecEmbeddedExampleSeeds.uid
     )

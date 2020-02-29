@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a numeric schema type.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecNumericSchema<T: Codable & Comparable>: Codable, Equatable {
+public struct SpecNumericSchema<T: Codable & Comparable>: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

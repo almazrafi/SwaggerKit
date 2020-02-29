@@ -113,6 +113,10 @@
 		C006F2232406B9E400C3F783 /* SpecSecurityHTTPScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08729E82323B7EE006563C5 /* SpecSecurityHTTPScheme.swift */; };
 		C006F2242406B9E400C3F783 /* SpecSecurityScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB76BD2323AA3E00DC18B6 /* SpecSecurityScheme.swift */; };
 		C006F2252406B9E400C3F783 /* SpecSecuritySchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB76C12323AAED00DC18B6 /* SpecSecuritySchemeType.swift */; };
+		C006F882240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
+		C006F883240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
+		C006F884240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
+		C006F885240AC0C900C3F783 /* Changeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006F881240AC0C900C3F783 /* Changeable.swift */; };
 		C03756482349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
 		C03756492349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
 		C037564A2349EDAA00ABFAA9 /* SpecPathSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03756472349EDAA00ABFAA9 /* SpecPathSeeds.swift */; };
@@ -708,6 +712,7 @@
 		C004120A2325AB1700FB5FBB /* SpecRequestBodySeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodySeeds.swift; sourceTree = "<group>"; };
 		C004120E2325AC8300FB5FBB /* SpecRequestBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecRequestBodyTests.swift; sourceTree = "<group>"; };
 		C006F1CC2406B50900C3F783 /* SwaggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwaggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C006F881240AC0C900C3F783 /* Changeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Changeable.swift; sourceTree = "<group>"; };
 		C02F12EB24059886001166D9 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		C02F12ED240598A1001166D9 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C02F12EE240599A7001166D9 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
@@ -1160,6 +1165,7 @@
 				C0F674472309572200C7B12C /* Extensions */,
 				C0F674532309572200C7B12C /* AnyCodable.swift */,
 				C0F6744E2309572200C7B12C /* AnyCodingKey.swift */,
+				C006F881240AC0C900C3F783 /* Changeable.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2042,6 +2048,7 @@
 				C006F1E92406B9C800C3F783 /* SpecComponentRegistry.swift in Sources */,
 				C006F1EC2406B9C800C3F783 /* SpecEmbeddedExample.swift in Sources */,
 				C006F2152406B9E000C3F783 /* SpecObjectSchema.swift in Sources */,
+				C006F885240AC0C900C3F783 /* Changeable.swift in Sources */,
 				C006F1D72406B9A900C3F783 /* SpecDocumentContext.swift in Sources */,
 				C006F21F2406B9E400C3F783 /* SpecOAuthFlow.swift in Sources */,
 				C006F21C2406B9E000C3F783 /* SpecStringFormat.swift in Sources */,
@@ -2129,6 +2136,7 @@
 				C0F6748A2309572200C7B12C /* SpecSchemaMetadata.swift in Sources */,
 				C0F674E42309572200C7B12C /* SpecReference.swift in Sources */,
 				C0F674EA2309572200C7B12C /* SpecServer.swift in Sources */,
+				C006F884240AC0C900C3F783 /* Changeable.swift in Sources */,
 				C08729EB2323B7EE006563C5 /* SpecSecurityHTTPScheme.swift in Sources */,
 				C0F674842309572200C7B12C /* SpecContactInfo.swift in Sources */,
 				C0F6749F2309572200C7B12C /* SpecSchemaType.swift in Sources */,
@@ -2320,6 +2328,7 @@
 				C0F674892309572200C7B12C /* SpecSchemaMetadata.swift in Sources */,
 				C0F674E32309572200C7B12C /* SpecReference.swift in Sources */,
 				C0F674E92309572200C7B12C /* SpecServer.swift in Sources */,
+				C006F882240AC0C900C3F783 /* Changeable.swift in Sources */,
 				C08729EA2323B7EE006563C5 /* SpecSecurityHTTPScheme.swift in Sources */,
 				C0F674832309572200C7B12C /* SpecContactInfo.swift in Sources */,
 				C0F6749E2309572200C7B12C /* SpecSchemaType.swift in Sources */,
@@ -2511,6 +2520,7 @@
 				C0F674882309572200C7B12C /* SpecSchemaMetadata.swift in Sources */,
 				C0F674E22309572200C7B12C /* SpecReference.swift in Sources */,
 				C0F674E82309572200C7B12C /* SpecServer.swift in Sources */,
+				C006F883240AC0C900C3F783 /* Changeable.swift in Sources */,
 				C08729E92323B7EE006563C5 /* SpecSecurityHTTPScheme.swift in Sources */,
 				C0F674822309572200C7B12C /* SpecContactInfo.swift in Sources */,
 				C0F6749D2309572200C7B12C /* SpecSchemaType.swift in Sources */,

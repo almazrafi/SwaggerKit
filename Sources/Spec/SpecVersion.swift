@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a version.
 /// Get more info: https://swagger.io/specification/#infoObject
-public struct SpecVersion: Codable, CustomStringConvertible {
+public struct SpecVersion: Codable, CustomStringConvertible, Changeable {
 
     // MARK: - Instance Properties
 

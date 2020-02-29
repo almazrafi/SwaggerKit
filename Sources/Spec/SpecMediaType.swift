@@ -3,7 +3,7 @@ import Foundation
 /// An object representing a media type.
 /// Each media type object provides schema and examples for the media type identified by its key.
 /// Get more info: https://swagger.io/specification/#mediaTypeObject
-public struct SpecMediaType: Codable, Equatable {
+public struct SpecMediaType: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

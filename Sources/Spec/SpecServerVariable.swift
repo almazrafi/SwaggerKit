@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a variable for server URL template substitution.
 /// Get more info: https://swagger.io/specification/#serverVariableObject
-public struct SpecServerVariable: Codable, Equatable {
+public struct SpecServerVariable: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

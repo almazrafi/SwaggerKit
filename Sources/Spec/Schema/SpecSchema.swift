@@ -4,7 +4,7 @@ import Foundation
 /// Schema allows the definition of input and output data types.
 /// These types can be objects, but also primitives and arrays.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecSchema: Codable, Equatable {
+public struct SpecSchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

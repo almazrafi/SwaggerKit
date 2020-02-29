@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a schema that describes the structure and syntax of the parameter.
 /// Get more info: https://swagger.io/specification/#parameterObject
-public struct SpecParameterSchema: Codable, Equatable {
+public struct SpecParameterSchema: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

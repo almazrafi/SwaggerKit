@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a metadata of the schema.
 /// Get more info: https://swagger.io/specification/#schemaObject
-public struct SpecSchemaMetadata: Codable, Equatable {
+public struct SpecSchemaMetadata: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
@@ -37,7 +37,7 @@ public struct SpecSchemaMetadata: Codable, Equatable {
 
     /// Adds additional metadata to describe the XML representation.
     /// This may be used only on properties schemas. It has no effect on root schemas.
-    public var xml: SpecComponent<SpecSchemaXML>?
+    public var xml: SpecSchemaXML?
 
     /// Additional external documentation for this schema.
     public var externalDocumentation: SpecExternalDocumentation?
@@ -75,7 +75,7 @@ public struct SpecSchemaMetadata: Codable, Equatable {
     public init(
         title: String? = nil,
         description: String? = nil,
-        xml: SpecComponent<SpecSchemaXML>? = nil,
+        xml: SpecSchemaXML? = nil,
         externalDocumentation: SpecExternalDocumentation? = nil,
         isReadOnly: Bool? = nil,
         isWriteOnly: Bool? = nil,

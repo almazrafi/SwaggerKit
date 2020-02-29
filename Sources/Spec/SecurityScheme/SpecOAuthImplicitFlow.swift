@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a configuration details for the OAuth Implicit flow.
 /// Get more info: https://swagger.io/specification/#oauthFlowObject
-public struct SpecOAuthImplicitFlow: Codable, Equatable {
+public struct SpecOAuthImplicitFlow: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

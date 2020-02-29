@@ -4,7 +4,7 @@ import Foundation
 /// All objects defined within the components object will have no effect on the API
 /// unless they are explicitly referenced from properties outside the components object.
 /// Get more info: https://swagger.io/specification/#componentsObject
-public struct SpecComponents: Codable, Equatable {
+public struct SpecComponents: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 

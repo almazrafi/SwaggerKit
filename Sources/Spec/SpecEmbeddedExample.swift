@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing an embedded example.
 /// Get more info: https://swagger.io/specification/#exampleObject
-public struct SpecEmbeddedExample: Codable {
+public struct SpecEmbeddedExample: Codable, Changeable {
 
     // MARK: - Instance Properties
 
