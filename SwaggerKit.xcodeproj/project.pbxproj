@@ -1644,12 +1644,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0E9FD6D21F253A7009C453F /* SwaggerKit iOS */,
 				C0AE177921F677E60070DD72 /* SwaggerKit macOS */,
+				C0E9FD6D21F253A7009C453F /* SwaggerKit iOS */,
 				C080D0F321F66BD7003FBCF4 /* SwaggerKit tvOS */,
 				C006F1CB2406B50900C3F783 /* SwaggerKit watchOS */,
-				C0E9FD7521F253A8009C453F /* SwaggerKit Tests iOS */,
 				C0AE179721F6793A0070DD72 /* SwaggerKit Tests macOS */,
+				C0E9FD7521F253A8009C453F /* SwaggerKit Tests iOS */,
 				C0A6036621F680B9009EC42C /* SwaggerKit Tests tvOS */,
 			);
 		};
