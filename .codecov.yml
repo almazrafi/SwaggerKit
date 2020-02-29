@@ -7,13 +7,9 @@ coverage:
     project:
       default:
         threshold: 1.0%
-        paths:
-          - "Sources"
     changes:
       default:
         threshold: 1.0%
-        paths:
-          - "Sources"
     patch: off
 
 comment:
@@ -22,6 +18,6 @@ comment:
   after_n_builds: 3
 
 ignore:
-  - Tests/**/*
-  - Pods/**/*
-  - Scripts/**/*
+  - Tests
+  - Pods
+  - Scripts
