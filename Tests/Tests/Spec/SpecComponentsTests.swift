@@ -66,9 +66,6 @@ final class SpecComponentsTests: QuickSpec {
                 do {
                     let encodedComponentsYAML = try YAMLEncoder.test.encode(components)
 
-                    print(try componentsYAML.yamlSorted())
-                    print(encodedComponentsYAML)
-
                     expect(encodedComponentsYAML).to(equal(try componentsYAML.yamlSorted()))
                 } catch {
                     fail("Test encountered unexpected error: \(error)")
