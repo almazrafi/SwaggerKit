@@ -1106,11 +1106,11 @@
 				C0F6743C2309572200C7B12C /* SpecReference.swift */,
 				C0F6742E2309572200C7B12C /* SpecReferenceRegistry.swift */,
 				C0F6743B2309572200C7B12C /* SpecResponse.swift */,
+				C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */,
 				C0F6743E2309572200C7B12C /* SpecServer.swift */,
 				C0F674142309572200C7B12C /* SpecServerVariable.swift */,
 				C0F674442309572200C7B12C /* SpecTag.swift */,
 				C0F6740E2309572200C7B12C /* SpecVersion.swift */,
-				C006F8D8240B192200C3F783 /* SpecSecurityRequirement.swift */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
