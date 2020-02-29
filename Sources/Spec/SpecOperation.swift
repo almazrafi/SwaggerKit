@@ -122,7 +122,6 @@ public struct SpecOperation: Codable, Equatable, Changeable {
         self.tags = tags
         self.servers = servers
         self.security = security
-
     }
 
     /// Creates a new instance by decoding from the given decoder.
