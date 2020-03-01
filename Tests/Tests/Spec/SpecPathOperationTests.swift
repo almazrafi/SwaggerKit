@@ -5,24 +5,24 @@ import Nimble
 
 @testable import SwaggerKit
 
-final class SpecOperationTests: QuickSpec {
+final class SpecPathOperationTests: QuickSpec {
 
     // MARK: - Instance Methods
 
     override func spec() {
-        var operation: SpecOperation!
+        var operation: SpecPathOperation!
         var operationYAML: String!
 
         describe("GET app info operation") {
             beforeEach {
-                operation = SpecOperationSeeds.getAppInfo
-                operationYAML = SpecOperationSeeds.getAppInfoYAML
+                operation = SpecPathOperationSeeds.getAppInfo
+                operationYAML = SpecPathOperationSeeds.getAppInfoYAML
             }
 
             it("should be correctly decoded from YAML string") {
                 do {
                     let decodedOperation = try YAMLDecoder.test.decode(
-                        SpecOperation.self,
+                        SpecPathOperation.self,
                         from: operationYAML
                     )
 
@@ -45,14 +45,14 @@ final class SpecOperationTests: QuickSpec {
 
         describe("GET apps operation") {
             beforeEach {
-                operation = SpecOperationSeeds.getApps
-                operationYAML = SpecOperationSeeds.getAppsYAML
+                operation = SpecPathOperationSeeds.getApps
+                operationYAML = SpecPathOperationSeeds.getAppsYAML
             }
 
             it("should be correctly decoded from YAML string") {
                 do {
                     let decodedOperation = try YAMLDecoder.test.decode(
-                        SpecOperation.self,
+                        SpecPathOperation.self,
                         from: operationYAML
                     )
 
@@ -75,14 +75,14 @@ final class SpecOperationTests: QuickSpec {
 
         describe("POST app operation") {
             beforeEach {
-                operation = SpecOperationSeeds.postApp
-                operationYAML = SpecOperationSeeds.postAppYAML
+                operation = SpecPathOperationSeeds.postApp
+                operationYAML = SpecPathOperationSeeds.postAppYAML
             }
 
             it("should be correctly decoded from YAML string") {
                 do {
                     let decodedOperation = try YAMLDecoder.test.decode(
-                        SpecOperation.self,
+                        SpecPathOperation.self,
                         from: operationYAML
                     )
 
@@ -105,14 +105,14 @@ final class SpecOperationTests: QuickSpec {
 
         describe("POST subscription operation") {
             beforeEach {
-                operation = SpecOperationSeeds.postSubscription
-                operationYAML = SpecOperationSeeds.postSubscriptionYAML
+                operation = SpecPathOperationSeeds.postSubscription
+                operationYAML = SpecPathOperationSeeds.postSubscriptionYAML
             }
 
             it("should be correctly decoded from YAML string") {
                 do {
                     let decodedOperation = try YAMLDecoder.test.decode(
-                        SpecOperation.self,
+                        SpecPathOperation.self,
                         from: operationYAML
                     )
 
@@ -135,7 +135,7 @@ final class SpecOperationTests: QuickSpec {
 
         describe(".extensions") {
             beforeEach {
-                operation = SpecOperationSeeds.postSubscription
+                operation = SpecPathOperationSeeds.postSubscription
             }
 
             it("should return extensions") {

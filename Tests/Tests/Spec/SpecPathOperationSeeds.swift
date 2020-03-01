@@ -1,7 +1,7 @@
 import Foundation
 import SwaggerKit
 
-enum SpecOperationSeeds {
+enum SpecPathOperationSeeds {
 
     // MARK: - Type Properties
 
@@ -15,7 +15,7 @@ enum SpecOperationSeeds {
         \(SpecParameterSeeds.uidYAML.yamlArrayItem())
         """
 
-    static let getAppInfo = SpecOperation(
+    static let getAppInfo = SpecPathOperation(
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
@@ -35,7 +35,7 @@ enum SpecOperationSeeds {
         \(SpecSecurityRequirementSeeds.optionalYAML.yamlArrayItem())
         """
 
-    static let getApps = SpecOperation(
+    static let getApps = SpecPathOperation(
         identifier: "getApps",
         summary: "Returns list of apps",
         responses: [
@@ -61,7 +61,7 @@ enum SpecOperationSeeds {
         \(SpecSecurityRequirementSeeds.oauth2YAML.yamlArrayItem())
         """
 
-    static let postApp = SpecOperation(
+    static let postApp = SpecPathOperation(
         identifier: "postApp",
         summary: "Creates app with the provided information",
         externalDocs: SpecExternalDocsSeeds.moreInfo,
@@ -92,7 +92,7 @@ enum SpecOperationSeeds {
         x-private: true
         """
 
-    static let postSubscription = SpecOperation(
+    static let postSubscription = SpecPathOperation(
         description: "Deprecated method for event subscriptions.",
         isDeprecated: true,
         responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],

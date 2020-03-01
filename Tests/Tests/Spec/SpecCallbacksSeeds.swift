@@ -26,13 +26,13 @@ enum SpecCallbacksSeeds {
     static let subscription = SpecCallbacks(
         paths: [
             "{$request.body#/completionURL}": SpecPath(
-                post: SpecOperation(
+                post: SpecPathOperation(
                     responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)],
                     requestBody: SpecComponent(referenceURI: "#/components/requestBodies/CompletionCallback")
                 )
             ),
             "{$request.body#/progressURL}": SpecPath(
-                post: SpecOperation(
+                post: SpecPathOperation(
                     responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)],
                     requestBody: SpecComponent(referenceURI: "#/components/requestBodies/ProgressCallback")
                 )

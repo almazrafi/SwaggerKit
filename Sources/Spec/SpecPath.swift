@@ -49,28 +49,28 @@ public struct SpecPath: Codable, Equatable, Changeable {
     public var parameters: [SpecComponent<SpecParameter>]?
 
     /// A definition of a `GET` operation on this path.
-    public var get: SpecOperation?
+    public var get: SpecPathOperation?
 
     /// A definition of a `POST` operation on this path.
-    public var post: SpecOperation?
+    public var post: SpecPathOperation?
 
     /// A definition of a `PUT` operation on this path.
-    public var put: SpecOperation?
+    public var put: SpecPathOperation?
 
     /// A definition of a `PATCH` operation on this path.
-    public var patch: SpecOperation?
+    public var patch: SpecPathOperation?
 
     /// A definition of a `DELETE` operation on this path.
-    public var delete: SpecOperation?
+    public var delete: SpecPathOperation?
 
     /// A definition of a `HEAD` operation on this path.
-    public var head: SpecOperation?
+    public var head: SpecPathOperation?
 
     /// A definition of a `OPTIONS` operation on this path.
-    public var options: SpecOperation?
+    public var options: SpecPathOperation?
 
     /// A definition of a `TRACE` operation on this path.
-    public var trace: SpecOperation?
+    public var trace: SpecPathOperation?
 
     /// The extensions properties.
     /// Keys will be prefixed by "x-" when encoding.
@@ -88,14 +88,14 @@ public struct SpecPath: Codable, Equatable, Changeable {
         description: String? = nil,
         servers: [SpecServer]? = nil,
         parameters: [SpecComponent<SpecParameter>]? = nil,
-        get: SpecOperation? = nil,
-        post: SpecOperation? = nil,
-        put: SpecOperation? = nil,
-        patch: SpecOperation? = nil,
-        delete: SpecOperation? = nil,
-        head: SpecOperation? = nil,
-        options: SpecOperation? = nil,
-        trace: SpecOperation? = nil,
+        get: SpecPathOperation? = nil,
+        post: SpecPathOperation? = nil,
+        put: SpecPathOperation? = nil,
+        patch: SpecPathOperation? = nil,
+        delete: SpecPathOperation? = nil,
+        head: SpecPathOperation? = nil,
+        options: SpecPathOperation? = nil,
+        trace: SpecPathOperation? = nil,
         extensions: [String: Any] = [:]
     ) {
         self.extensionsContainer = SpecExtensionsContainer(content: extensions)

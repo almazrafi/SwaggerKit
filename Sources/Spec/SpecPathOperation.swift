@@ -2,7 +2,7 @@ import Foundation
 
 /// An object representing a single API operation on a path.
 /// Get more info: https://swagger.io/specification/#operationObject
-public struct SpecOperation: Codable, Equatable, Changeable {
+public struct SpecPathOperation: Codable, Equatable, Changeable {
 
     // MARK: - Nested Types
 
