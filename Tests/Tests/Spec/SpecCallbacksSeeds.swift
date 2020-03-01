@@ -27,14 +27,14 @@ enum SpecCallbacksSeeds {
         paths: [
             "{$request.body#/completionURL}": SpecPath(
                 post: SpecPathOperation(
-                    responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)],
-                    requestBody: SpecComponent(referenceURI: "#/components/requestBodies/CompletionCallback")
+                    requestBody: SpecComponent(referenceURI: "#/components/requestBodies/CompletionCallback"),
+                    responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)]
                 )
             ),
             "{$request.body#/progressURL}": SpecPath(
                 post: SpecPathOperation(
-                    responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)],
-                    requestBody: SpecComponent(referenceURI: "#/components/requestBodies/ProgressCallback")
+                    requestBody: SpecComponent(referenceURI: "#/components/requestBodies/ProgressCallback"),
+                    responses: ["204": SpecComponent(value: SpecResponseSeeds.empty)]
                 )
             )
         ],

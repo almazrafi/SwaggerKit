@@ -45,9 +45,6 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
     /// Default value is `false`.
     public var isDeprecated: Bool?
 
-    /// The list of possible responses as they are returned from executing this operation.
-    public var responses: [String: SpecComponent<SpecResponse>]
-
     /// A list of parameters that are applicable for this operation.
     /// If a parameter is already defined at the path object,
     /// the new definition will override it but can never remove it.
@@ -61,6 +58,9 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
     /// has explicitly defined semantics for request bodies.
     /// In other cases where the HTTP spec is vague, requestBody shall be ignored.
     public var requestBody: SpecComponent<SpecRequestBody>?
+
+    /// The list of possible responses as they are returned from executing this operation.
+    public var responses: [String: SpecComponent<SpecResponse>]
 
     /// A map between an event name and its out-of band callbacks related to the parent operation.
     public var callbacks: [String: SpecComponent<SpecCallbacks>]?
@@ -98,9 +98,9 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
         description: String? = nil,
         externalDocs: SpecExternalDocs? = nil,
         isDeprecated: Bool? = nil,
-        responses: [String: SpecComponent<SpecResponse>],
         parameters: [SpecComponent<SpecParameter>]? = nil,
         requestBody: SpecComponent<SpecRequestBody>? = nil,
+        responses: [String: SpecComponent<SpecResponse>],
         callbacks: [String: SpecComponent<SpecCallbacks>]? = nil,
         tags: [String]? = nil,
         servers: [SpecServer]? = nil,
@@ -115,9 +115,9 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
         self.externalDocs = externalDocs
         self.isDeprecated = isDeprecated
 
-        self.responses = responses
         self.parameters = parameters
         self.requestBody = requestBody
+        self.responses = responses
         self.callbacks = callbacks
         self.tags = tags
         self.servers = servers
@@ -139,9 +139,9 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
         externalDocs = try container.decodeIfPresent(forKey: .externalDocs)
         isDeprecated = try container.decodeIfPresent(forKey: .isDeprecated)
 
-        responses = try container.decode(forKey: .responses)
         parameters = try container.decodeIfPresent(forKey: .parameters)
         requestBody = try container.decodeIfPresent(forKey: .requestBody)
+        responses = try container.decode(forKey: .responses)
         callbacks = try container.decodeIfPresent(forKey: .callbacks)
         tags = try container.decodeIfPresent(forKey: .tags)
         servers = try container.decodeIfPresent(forKey: .servers)
@@ -166,9 +166,9 @@ public struct SpecPathOperation: Codable, Equatable, Changeable {
         try container.encodeIfPresent(externalDocs, forKey: .externalDocs)
         try container.encodeIfPresent(isDeprecated, forKey: .isDeprecated)
 
-        try container.encode(responses, forKey: .responses)
         try container.encodeIfPresent(parameters, forKey: .parameters)
         try container.encodeIfPresent(requestBody, forKey: .requestBody)
+        try container.encode(responses, forKey: .responses)
         try container.encodeIfPresent(callbacks, forKey: .callbacks)
         try container.encodeIfPresent(tags, forKey: .tags)
         try container.encodeIfPresent(servers, forKey: .servers)

@@ -16,11 +16,11 @@ enum SpecPathOperationSeeds {
         """
 
     static let getAppInfo = SpecPathOperation(
+        parameters: [SpecComponent(value: SpecParameterSeeds.uid)],
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
-        ],
-        parameters: [SpecComponent(value: SpecParameterSeeds.uid)]
+        ]
     )
 
     static let getAppsYAML = """
@@ -65,11 +65,11 @@ enum SpecPathOperationSeeds {
         identifier: "postApp",
         summary: "Creates app with the provided information",
         externalDocs: SpecExternalDocsSeeds.moreInfo,
+        requestBody: SpecComponent(value: SpecRequestBodySeeds.appInfo),
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
         ],
-        requestBody: SpecComponent(value: SpecRequestBodySeeds.appInfo),
         security: [SpecSecurityRequirementSeeds.oauth2]
     )
 
@@ -95,8 +95,8 @@ enum SpecPathOperationSeeds {
     static let postSubscription = SpecPathOperation(
         description: "Deprecated method for event subscriptions.",
         isDeprecated: true,
-        responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],
         requestBody: SpecComponent(referenceURI: "#/components/requestBodies/Subscription"),
+        responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],
         callbacks: ["event": SpecComponent(value: SpecCallbacksSeeds.subscription)],
         tags: ["subscriptions", "private"],
         servers: [SpecServerSeeds.deprecated],
