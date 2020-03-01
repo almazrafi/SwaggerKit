@@ -1,7 +1,7 @@
 import Foundation
 import SwaggerKit
 
-enum SpecOperationSeeds {
+enum SpecPathOperationSeeds {
 
     // MARK: - Type Properties
 
@@ -15,12 +15,12 @@ enum SpecOperationSeeds {
         \(SpecParameterSeeds.uidYAML.yamlArrayItem())
         """
 
-    static let getAppInfo = SpecOperation(
+    static let getAppInfo = SpecPathOperation(
+        parameters: [SpecComponent(value: SpecParameterSeeds.uid)],
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
-        ],
-        parameters: [SpecComponent(value: SpecParameterSeeds.uid)]
+        ]
     )
 
     static let getAppsYAML = """
@@ -35,7 +35,7 @@ enum SpecOperationSeeds {
         \(SpecSecurityRequirementSeeds.optionalYAML.yamlArrayItem())
         """
 
-    static let getApps = SpecOperation(
+    static let getApps = SpecPathOperation(
         identifier: "getApps",
         summary: "Returns list of apps",
         responses: [
@@ -61,15 +61,15 @@ enum SpecOperationSeeds {
         \(SpecSecurityRequirementSeeds.oauth2YAML.yamlArrayItem())
         """
 
-    static let postApp = SpecOperation(
+    static let postApp = SpecPathOperation(
         identifier: "postApp",
         summary: "Creates app with the provided information",
         externalDocs: SpecExternalDocsSeeds.moreInfo,
+        requestBody: SpecComponent(value: SpecRequestBodySeeds.appInfo),
         responses: [
             "200": SpecComponent(value: SpecResponseSeeds.appInfo),
             "4XX": SpecComponent(referenceURI: "#/components/responses/Error")
         ],
-        requestBody: SpecComponent(value: SpecRequestBodySeeds.appInfo),
         security: [SpecSecurityRequirementSeeds.oauth2]
     )
 
@@ -92,11 +92,11 @@ enum SpecOperationSeeds {
         x-private: true
         """
 
-    static let postSubscription = SpecOperation(
+    static let postSubscription = SpecPathOperation(
         description: "Deprecated method for event subscriptions.",
         isDeprecated: true,
-        responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],
         requestBody: SpecComponent(referenceURI: "#/components/requestBodies/Subscription"),
+        responses: ["200": SpecComponent(value: SpecResponseSeeds.empty)],
         callbacks: ["event": SpecComponent(value: SpecCallbacksSeeds.subscription)],
         tags: ["subscriptions", "private"],
         servers: [SpecServerSeeds.deprecated],
